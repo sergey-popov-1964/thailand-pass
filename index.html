@@ -17,17 +17,39 @@
 	</div>
 
 	<ul class="header__nav">
-		<li class="header__link app__list">Home</li>
 		<li class="header__link app__list">About us</li>
-		<li class="header__link app__list">ThaiPass</li>
-		<li class="header__link app__list">Info</li>
+		<li class="header__link app__list">
+			<a href="#test&go" class="header__link app__link">
+				Test&Go
+			</a>
+		</li>
+		<li class="header__link app__list">
+			<a href="#thaipass" class="header__link app__link">
+				ThaiPass
+			</a>
+		</li>
+		<li class="header__link app__list">
+			<a href="#info" class="header__link app__link">
+				Info
+			</a>
+		</li>
 		<li class="header__link app__list">News</li>
-		<li class="header__link app__list">A&Q</li>
-		<li class="header__link app__list">Contact</li>
+		<li class="header__link app__list">
+			<a href="#q&a" class="header__link app__link">
+				Q&A
+			</a>
+		</li>
+		<li class="header__link app__list">
+			<a href="#contact" class="header__link app__link">
+				Contact
+			</a>
+		</li>
 	</ul>
 
 	<div class="header__order">
-		<button class="app__button header__button order__button">Order</button>
+		<a href="#order" class="header__link app__link">
+			<button class="app__button header__button order__button">Order</button>
+		</a>
 	</div>
 
 </header>
@@ -36,22 +58,23 @@
 	<section class="offer">
 		<h1 class="offer__title">Title</h1>
 		<p class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda cum earum illum ipsa molestiae nemo quo voluptas voluptatibus. A architecto culpa delectus distinctio ipsa, mollitia unde ut velit.</p>
-		<button class="app__button offer__button order__button">Order</button>
-
+		<a href="#order" class="header__link app__link">
+			<button class="app__button offer__button order__button">Order</button>
+		</a>
 	</section>
 
 	<section>
 		About us
 	</section>
 
-	<section class="testgo app_section">
+	<section id="test&go" class="testgo app_section">
 		<h2 class="app__title">What you need for Test & Go</h2>
 
 		<ul class="testgo__list card__list">
 		</ul>
 	</section>
 
-	<section class="thaipass app_section">
+	<section id="thaipass" class="thaipass app_section">
 		<h2 class="app__title">What you need for Thailand Pass</h2>
 
 		<ul class="thaipass__list card__list">
@@ -59,7 +82,11 @@
 
 	</section>
 
-	<section>
+	<section id="info">
+		Info
+	</section>
+
+	<section id="order">
 		<h2 class="app__title">Send message</h2>
 		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
@@ -123,7 +150,7 @@
 		News
 	</section>
 
-	<section class="app_section">
+	<section id="q&a" class="app_section">
 		<h2 class="app__title">Answers & Questions</h2>
 
 		<ul class="answer__list">
@@ -131,7 +158,7 @@
 
 	</section>
 
-	<section class="footer">
+	<section id="contact" class="footer">
 		<p>Email: company@me.com</p>
 		<p>Tel: +xxx xxx xxx</p>
 	</section>
@@ -154,13 +181,13 @@
 
 
 
-<!--&lt;!&ndash;modal&ndash;&gt;-->
-<!--<div class="modal">-->
-<!--	<div class="modal__window">-->
-<!--		<button class="modal__close">Close</button>-->
-<!--		<h3 class="modal__title">Здесь будет форма</h3>-->
-<!--	</div>-->
-<!--</div>-->
+<!--modal-->
+<div class="modal">
+	<div class="modal__window">
+		<button class="modal__close">Close</button>
+		<h3 class="modal__title">Здесь будет форма</h3>
+	</div>
+</div>
 
 <template class="element-answer">
 	<li class="answer__list app__list">

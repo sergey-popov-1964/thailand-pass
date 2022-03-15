@@ -43,7 +43,6 @@
 }
 
 .app__button_transparent:hover {
-    /*border: none;*/
     background-color: #2699cc;
     color: #FFFFFF;
 }
@@ -90,6 +89,18 @@
     padding: 40px 20px 40px 0;
 }
 
+.app__link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.app__link:hover {
+    color: #2699cc;
+}
+
+.header__link:visited {
+    color: black;
+}
 /* --------------------------------- */
 /* Header */
 
@@ -523,4 +534,13 @@
 
 .form__input_invisible {
     visibility: hidden;
+}
+
+
+/* --------------------------------- */
+/* Validate */
+.js-validate-error-label {
+    position: absolute;
+    right: 5px;
+    top: 100%;
 }
