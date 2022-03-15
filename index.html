@@ -5,32 +5,193 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="index.css">
 </head>
-<body>
-	<form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
-		<input type="hidden" name="admin_email[]" value="sergeykms@gmail.com">
-		<input type="hidden" name="form_subject" value="Проверка">
-		<h2>Отправка формы</h2>
-		<label class="form-label">
-			<span>Введите имя</span>
-			<input type="text" name="name">
-		</label>
-		<label class="form-label">
-			<span>Введите телефон</span>
-			<input type="tel" data-validate-field="tel" name="tel">
-		</label>
-		<label class="form-label">
-			<span>Введите email</span>
-			<input type="email" data-validate-field="email" name="email">
-		</label>
-		<label class="form-label file-label">
-			<span>Прикрепить файл</span>
-			<input type="file" name="file[]" multiple>
-		</label>
-		<button type="submit">Отправить</button>
-	</form>
-	<script src="inputmask.min.js"></script>
-	<script src="just-validate.min.js"></script>
-	<script src="script.js"></script>
+
+<body class="page">
+
+<header class="header">
+
+	<div class="header__logo">
+		Logo
+	</div>
+
+	<ul class="header__nav">
+		<li class="header__link app__list">Home</li>
+		<li class="header__link app__list">About us</li>
+		<li class="header__link app__list">ThaiPass</li>
+		<li class="header__link app__list">Info</li>
+		<li class="header__link app__list">News</li>
+		<li class="header__link app__list">A&Q</li>
+		<li class="header__link app__list">Contact</li>
+	</ul>
+
+	<div class="header__order">
+		<button class="app__button header__button order__button">Order</button>
+	</div>
+
+</header>
+
+<main class="main">
+	<section class="offer">
+		<h1 class="offer__title">Title</h1>
+		<p class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda cum earum illum ipsa molestiae nemo quo voluptas voluptatibus. A architecto culpa delectus distinctio ipsa, mollitia unde ut velit.</p>
+		<button class="app__button offer__button order__button">Order</button>
+
+	</section>
+
+	<section>
+		About us
+	</section>
+
+	<section class="testgo app_section">
+		<h2 class="app__title">What you need for Test & Go</h2>
+
+		<ul class="testgo__list card__list">
+		</ul>
+	</section>
+
+	<section class="thaipass app_section">
+		<h2 class="app__title">What you need for Thailand Pass</h2>
+
+		<ul class="thaipass__list card__list">
+		</ul>
+
+	</section>
+
+	<section>
+		<h2 class="app__title">Send message</h2>
+		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
+			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
+			<input type="hidden" name="form_subject" value="Тема письма">
+			<label class="form__label">
+				<span class = "form__subtitle">Your name <span class="form__subtitle form__subtitle_required">*</span></span>
+				<input type="text"
+					   class="form__input"
+					   name="order_name"
+					   placeholder="Name">
+			</label>
+			<label class="form__label">
+				<span class = "form__subtitle">Your e-mail <span class="form__subtitle form__subtitle_required">*</span></span>
+				<input type="email"
+					   class="form__input"
+					   name="order_email"
+					   placeholder="E-mail"
+					   data-validate-field="email">
+			</label>
+			<label class="form__label">
+				<span class = "form__subtitle">Your phone number  <span class="form__subtitle form__subtitle_required">*</span></span>
+				<input type="tel"
+					   class="form__input"
+					   name="order_phone"
+					   placeholder="Phone"
+					   data-validate-field="tel">
+			</label>
+			<label class="form__label">
+				<span class = "form__subtitle">Arrival date in Thailand  <span class="form__subtitle form__subtitle_required">*</span></span>
+				<input type="date"
+					   class="form__input"
+					   name="order_date"
+					   placeholder="Date">
+			</label>
+			<label class="form__label form__label_textarea">
+				<span class = "form__subtitle">Enter your question</span>
+				<textarea type="text"
+						  id="input-question"
+						  class="form__input"
+						  name="order_question"
+						  placeholder="Your question"
+						  rows="4"
+						  cols="50">
+						</textarea>
+			</label>
+
+			<label class="form__label_attach file__label">
+				<span class="app__button app__button_transparent">Attach files</span>
+				<input type="file" name="file[]" multiple>
+			</label>
+
+			<button type="submit" aria-label="submit" class="app__button app__button_transparent form__button" name="form_submit">
+				Send
+			</button>
+
+		</form>
+
+	</section>
+
+	<section>
+		News
+	</section>
+
+	<section class="app_section">
+		<h2 class="app__title">Answers & Questions</h2>
+
+		<ul class="answer__list">
+		</ul>
+
+	</section>
+
+	<section class="footer">
+		<p>Email: company@me.com</p>
+		<p>Tel: +xxx xxx xxx</p>
+	</section>
+
+</main>
+
+
+<footer class="footer">
+	<p>© 2022 Name company</p>
+</footer>
+
+
+<div class="popup-info popup">
+	<div class="form popup__form">
+		<h2 class="popup-info__name"></h2>
+		<p class="popup-info__text"></p>
+		<button type="button" class="popup__close"></button>
+	</div>
+</div>
+
+
+
+<!--&lt;!&ndash;modal&ndash;&gt;-->
+<!--<div class="modal">-->
+<!--	<div class="modal__window">-->
+<!--		<button class="modal__close">Close</button>-->
+<!--		<h3 class="modal__title">Здесь будет форма</h3>-->
+<!--	</div>-->
+<!--</div>-->
+
+<template class="element-answer">
+	<li class="answer__list app__list">
+		<div class="element-answer__name">
+			<span class="element-answer__mark">+</span>
+			<h3 class="element-answer__title app__subtitle"></h3>
+		</div>
+		<p class="element-answer__text element-answer__text_hide app__text"></p>
+	</li>
+</template>
+
+
+<template class="element-card">
+	<li class="card_list app__list">
+		<img src="" alt="" class="card__img">
+		<h4 class="card__title"></h4>
+		<p class="card__text"></p>
+		<button class="app__button app__button_transparent">READ MORE</button>
+	</li>
+</template>
+
+
+<script src="js/index.js"></script>
+<script src="js/data.js"></script>
+<script src="js/testGo.js"></script>
+<script src="js/thaipass.js"></script>
+<script src="js/answer.js"></script>
+<script src="vendor/inputmask.min.js"></script>
+<script src="vendor/just-validate.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
