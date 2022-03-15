@@ -544,3 +544,25 @@
     right: 5px;
     top: 100%;
 }
+
+.form__attach {
+    grid-column: 1/3;
+    display: grid;
+    gap: 15px;
+    grid-template: auto / repeat(3, 1fr);
+}
+
+.attach__button {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.attach__button:hover {
+    color: #2699cc;
+}

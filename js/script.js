@@ -14,12 +14,11 @@ const fileInput = document.querySelectorAll('input[type="file"]');
 fileInput.forEach((item, index) => {
     item.addEventListener('change', (e) => {
 		let files = e.currentTarget.files;
-		console.log(e);
 
 		if (files.length) {
 			item.closest('label').querySelector('span').textContent = files[0].name;
 		} else {
-			item.closest('label').querySelector('span').textContent = 'Attach files';
+			item.closest('label').querySelector('span').textContent = 'Click to attach file';
 		}
     })
 });
@@ -48,10 +47,10 @@ let validateForms = function(selector, rules) {
 			})
 				.then(res => {
 					if (res.ok) {
-						console.log(res)
 						form.reset();
-
-						fileInput.closest('label').querySelector('span').textContent = 'Attach files';
+						fileInput.forEach((item, index) => {
+							item.closest('label').querySelector('span').textContent = 'Attach files';
+						});
 						return;
 					}
 					return Promise.reject(`Ошибка: ${res.status}`);
