@@ -8,19 +8,33 @@ selector2.addEventListener('input', function(){
 	const re = /^\d*(\.\d+)?$/
 });
 
-const fileInput = document.querySelector('input[type="file"]');
+const fileInput = document.querySelectorAll('input[type="file"]');
 
-fileInput.addEventListener('change', (e) => {
-	let files = e.currentTarget.files;
-	console.log(files);
 
-	if (files.length) {
-		fileInput.closest('label').querySelector('span').textContent = files[0].name;
-	} else {
-		fileInput.closest('label').querySelector('span').textContent = 'Attach files';
-	}
+fileInput.forEach((item, index) => {
+    item.addEventListener('change', (e) => {
+		let files = e.currentTarget.files;
+		console.log(e);
 
+		if (files.length) {
+			item.closest('label').querySelector('span').textContent = files[0].name;
+		} else {
+			item.closest('label').querySelector('span').textContent = 'Attach files';
+		}
+    })
 });
+
+// fileInput.addEventListener('change', (e) => {
+// 	let files = e.currentTarget.files;
+// 	console.log(files);
+//
+// 	if (files.length) {
+// 		fileInput.closest('label').querySelector('span').textContent = files[0].name;
+// 	} else {
+// 		fileInput.closest('label').querySelector('span').textContent = 'Attach files';
+// 	}
+//
+// });
 
 let validateForms = function(selector, rules) {
 	new window.JustValidate(selector, {
