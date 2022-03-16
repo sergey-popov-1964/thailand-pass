@@ -19,21 +19,8 @@ fileInput.forEach((item, index) => {
 		} else {
 			item.closest('label').querySelector('span').textContent = 'Click to attach file';
 		}
-		addAttach()
     })
 });
-
-// fileInput.addEventListener('change', (e) => {
-// 	let files = e.currentTarget.files;
-// 	console.log(files);
-//
-// 	if (files.length) {
-// 		fileInput.closest('label').querySelector('span').textContent = files[0].name;
-// 	} else {
-// 		fileInput.closest('label').querySelector('span').textContent = 'Attach files';
-// 	}
-//
-// });
 
 let validateForms = function(selector, rules) {
 	new window.JustValidate(selector, {
@@ -48,9 +35,12 @@ let validateForms = function(selector, rules) {
 				.then(res => {
 					if (res.ok) {
 						form.reset();
-						fileInput.forEach((item, index) => {
-							item.closest('label').querySelector('span').textContent = 'Attach files';
+						const attachFile = document.querySelectorAll('.attach__list')
+
+						attachFile.forEach((item, index) => {
+							item.remove();
 						});
+						addAttach()
 						return;
 					}
 					return Promise.reject(`Ошибка: ${res.status}`);

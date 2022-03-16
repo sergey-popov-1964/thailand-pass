@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Thailand Pass</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 
@@ -134,42 +133,6 @@
 			</label>
 
 			<div class="form__attach">
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label attach__button">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
-<!--				<label class="form__label_attach file__label">-->
-<!--					<span class="attach__button">Click to attach file</span>-->
-<!--					<input type="file" name="file[]">-->
-<!--				</label>-->
 			</div>
 
 			<button type="submit" aria-label="submit" class="app__button app__button_transparent form__button" name="form_submit">
@@ -246,22 +209,25 @@
 
 
 <template class="element-attach">
-	<label class="attach__list form__label_attach file__label">
-		<span class="attach__button">Click to attach file</span>
-		<input type="file" name="file[]">
-	</label>
+	<li class="attach__list">
+		<button type="button" class="attach__del attach__del_invisible"></button>
+		<label class="form__label_attach file__label">
+			<span class="attach__button">Click to attach file</span>
+			<input type="file" name="file[]">
+		</label>
+	</li>
 </template>
 
 
 <script src="js/index.js"></script>
 <script src="js/data.js"></script>
+<script src="vendor/inputmask.min.js"></script>
+<script src="vendor/just-validate.min.js"></script>
 <script src="js/testGo.js"></script>
 <script src="js/thaipass.js"></script>
 <script src="js/answer.js"></script>
-<script src="vendor/inputmask.min.js"></script>
-<script src="vendor/just-validate.min.js"></script>
-<script src="js/script.js"></script>
 <script src="js/attach.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
