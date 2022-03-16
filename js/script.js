@@ -14,12 +14,12 @@ const fileInput = document.querySelectorAll('input[type="file"]');
 fileInput.forEach((item, index) => {
     item.addEventListener('change', (e) => {
 		let files = e.currentTarget.files;
-
 		if (files.length) {
 			item.closest('label').querySelector('span').textContent = files[0].name;
 		} else {
 			item.closest('label').querySelector('span').textContent = 'Click to attach file';
 		}
+		addAttach()
     })
 });
 
