@@ -50,5 +50,4 @@ let validateForms = function(selector, rules) {
 	});
 }
 
-validateForms('.form', { email: {required: true, email: true}, tel: {required: true} });
-
+validateForms('.form', { email: {required: true, email: true}, tel: {required: true}});
