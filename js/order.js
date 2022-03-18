@@ -1,5 +1,5 @@
 let selector = document.querySelectorAll('input[type="tel"]');
-let im = new Inputmask('+7 (999) 999-99-99');
+let im = new Inputmask('+9{1,3} (999) 999-99-99');
 im.mask(selector);
 
 let selector2 = document.querySelector('input[type="tel"]');

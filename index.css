@@ -85,8 +85,9 @@
 }
 
 .app_section {
+    grid-column: 2/3;
     margin: 0;
-    padding: 40px 20px 40px 0;
+    padding: 40px 0 40px 0;
 }
 
 .app__link {
@@ -233,13 +234,13 @@
 /* ThaiPass */
 
 
-.testgo {
-    grid-column: 2/3;
-}
+/*.testgo {*/
+/*    grid-column: 2/3;*/
+/*}*/
 
-.thaipass {
-    grid-column: 2/3;
-}
+/*.thaipass {*/
+/*    grid-column: 2/3;*/
+/*}*/
 
 .card__list {
     grid-row: 2/3;
@@ -614,32 +615,61 @@
 }
 
 /* --------------------------------- */
-/* Slider */
+/* News */
 
-.slider {
-    grid-column: 2/3;
+.news__list {
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template: auto / repeat(3, 1fr);
-    gap: 15px;
+    gap: 50px;
 }
 
-.slider__item {
-    border: solid 1px green;
+.news__item {
+    border: solid 1px #2699cc;
     list-style: none;
     text-decoration: none;
     display: none;
 }
 
-.slider__img {
+.news__box {
+    margin: 0;
+    padding: 10px;
+}
+
+.news__img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.slider__text {
+.news__title {
 
 }
 
-.slider__item_active {
+.news__item_active {
     display: block;
+}
+
+.news__prev {
+    width: 180px;
+    margin-right: 25px;
+}
+
+.news__next {
+    width: 180px;
+}
+
+.news__buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.news__button_transparent {
+    background-color: #FFFFFF;
+    color: #2699cc;
+    cursor: none;
 }

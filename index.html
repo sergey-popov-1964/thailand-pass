@@ -70,14 +70,14 @@
 		About us
 	</section>
 
-	<section id="test&go" class="testgo app_section">
+	<section id="test&go" class="app_section">
 		<h2 class="app__title">What you need for Test & Go</h2>
 
 		<ul class="testgo__list card__list">
 		</ul>
 	</section>
 
-	<section id="thaipass" class="thaipass app_section">
+	<section id="thaipass" class="app_section">
 		<h2 class="app__title">What you need for Thailand Pass</h2>
 
 		<ul class="thaipass__list card__list">
@@ -149,49 +149,16 @@
 
 	</section>
 
-	<section id="news">
+	<section id="news" class="app_section">
 		<h2 class="app__title">News</h2>
-		<h3 class="element-answer__title app__subtitle">Test & Go rules from 1 March 2022</h3>
-		<p class="element-answer__text app__text">Travellers can arrive in Thailand by air, land, and water with the required prepaid accommodation reduced to 1 night and the COVID-19 tests revised to 1 RT-PCR and 1 self-ATK. The health insurance coverage has also been reduced to no less than US$20,000.</p>
 
-		<button class="news__next">Next</button>
-		<button class="news__prev">Previous</button>
-
-		<ul class="slider">
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image1.jpg" alt="">
-				<p class="slider__text">1 Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия.</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image2.jpg" alt="">
-				<p class="slider__text">2 С другой стороны реализация намеченных плановых заданий требуют определения и уточнения форм развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. Задача организации, в особенности же укрепление и развитие структуры требуют</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image3.jpg" alt="">
-				<p class="slider__text">3 Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Равным образом дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Равным образом постоянное информационно-</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image4.jpg" alt="">
-				<p class="slider__text">4 Товарищи! постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Задача организации, в особенности же новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image5.jpg" alt="">
-				<p class="slider__text">5 С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки модели развития. Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение соответствующий условий активизации. Задача организации, в особенности же укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании направлений</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image6.jpg" alt="">
-				<p class="slider__text">6 Повседневная практика показывает, что укрепление и развитие структуры требуют от нас анализа форм развития. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image7.jpg" alt="">
-				<p class="slider__text">7 Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании направлений прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Таким образом сложившаяся структура организации в значительной степени обуславливает создание систем массового участия.</p>
-			</li>
-			<li class="slider__item">
-				<img class="slider__img" src="image/news/image8.jpg" alt="">
-				<p class="slider__text">8 Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки модели развития. Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. Равным образом постоянное информационно-</p>
-			</li>
+		<ul class="news__list">
 		</ul>
 
+		<div class="news__buttons">
+			<button class="news__prev app__button news__button_transparent">Previous news</button>
+			<button class="news__next app__button">Next news</button>
+		</div>
 
 	</section>
 
@@ -267,16 +234,27 @@
 </template>
 
 
-<script src="js/index.js"></script>
-<script src="js/slider.js"></script>
+<template class="element-news">
+	<li class="news__item">
+		<img class="news__img" src="" alt="">
+		<div class="news__box">
+			<p class="news__title"></p>
+			<button class="app__button app__button_transparent">READ NEWS</button>
+		</div>
+	</li>
+</template>
+
+
 <script src="js/data.js"></script>
+<script src="js/index.js"></script>
+<script src="js/news.js"></script>
 <script src="vendor/inputmask.min.js"></script>
 <script src="vendor/just-validate.min.js"></script>
 <script src="js/testGo.js"></script>
 <script src="js/thaipass.js"></script>
 <script src="js/answer.js"></script>
 <script src="js/attach.js"></script>
-<script src="js/script.js"></script>
+<script src="js/order.js"></script>
 
 </body>
 
