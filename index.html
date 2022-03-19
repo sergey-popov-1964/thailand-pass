@@ -11,54 +11,67 @@
 
 <header class="header">
 
-	<div class="header__logo">
-		Logo
+	<div class="header__contact">
+		<a class="header__phone" href="tel:+654545454">
+<!--			<img class="header__contact-img" src="image/phone.png" alt="Phone">-->
+			+7 (845) 568-87-87
+		</a>
+		<a class="header__email" href="mailto:mycompany@me.com">
+<!--			<img class="header__contact-img" src="image/email.png" alt="Email">-->
+			mycompany@me.com
+		</a>
 	</div>
 
-	<ul class="header__nav">
-		<li class="header__link app__list">About us</li>
-		<li class="header__link app__list">
-			<a href="#test&go" class="header__link app__link">
-				Test&Go
-			</a>
-		</li>
-		<li class="header__link app__list">
-			<a href="#thaipass" class="header__link app__link">
-				ThaiPass
-			</a>
-		</li>
-		<li class="header__link app__list">
-			<a href="#info" class="header__link app__link">
-				Info
-			</a>
-		</li>
-		<li class="header__link app__list">
-			<a href="#news" class="header__link app__link">
-				News
-			</a>
-		</li>
-		<li class="header__link app__list">
-			<a href="#q&a" class="header__link app__link">
-				Q&A
-			</a>
-		</li>
-		<li class="header__link app__list">
-			<a href="#contact" class="header__link app__link">
-				Contact
-			</a>
-		</li>
-	</ul>
+	<div class="header__menu">
+		<div class="header__logo">
+			<img class="header__img" src="image/logo-nav.png" alt="Logo">
+		</div>
 
-	<div class="header__order">
+		<ul class="header__nav">
+			<li class="header__link app__list">About us</li>
+			<li class="header__link app__list">
+				<a href="#test&go" class="header__link app__link">
+					Test&Go
+				</a>
+			</li>
+			<li class="header__link app__list">
+				<a href="#thaipass" class="header__link app__link">
+					ThaiPass
+				</a>
+			</li>
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#info" class="header__link app__link">-->
+<!--					Info-->
+<!--				</a>-->
+			</li>
+			<li class="header__link app__list">
+				<a href="#news" class="header__link app__link">
+					News
+				</a>
+			</li>
+			<li class="header__link app__list">
+				<a href="#q&a" class="header__link app__link">
+					Q&A
+				</a>
+			</li>
+			<li class="header__link app__list">
+				<a href="#contact" class="header__link app__link">
+					Contact
+				</a>
+			</li>
+		</ul>
+
+		<div class="header__order">
 		<a href="#order" class="header__link app__link">
 			<button class="app__button header__button order__button">Order</button>
 		</a>
+	</div>
 	</div>
 
 </header>
 
 <main class="main">
-	<section class="offer">
+	<section class="offer app_section">
 		<h1 class="offer__title">Title</h1>
 		<p class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda cum earum illum ipsa molestiae nemo quo voluptas voluptatibus. A architecto culpa delectus distinctio ipsa, mollitia unde ut velit.</p>
 		<a href="#order" class="header__link app__link">
@@ -85,9 +98,9 @@
 
 	</section>
 
-	<section id="info">
-		Info
-	</section>
+<!--	<section id="info">-->
+<!--		Info-->
+<!--	</section>-->
 
 	<section id="order">
 		<h2 class="app__title">Send message</h2>
@@ -163,7 +176,7 @@
 	</section>
 
 	<section id="q&a" class="app_section">
-		<h2 class="app__title">Answers & Questions</h2>
+		<h2 class="app__title">Questions & Answers</h2>
 
 		<ul class="answer__list">
 		</ul>
@@ -215,9 +228,11 @@
 <template class="element-card">
 	<li class="card_list app__list">
 		<img src="" alt="" class="card__img">
+		<div class="card__content">
 		<h4 class="card__title"></h4>
 		<p class="card__text"></p>
-		<button class="app__button app__button_transparent">READ MORE</button>
+		</div>
+		<button class="app__button app__button_transparent card__pos">READ MORE</button>
 	</li>
 </template>
 

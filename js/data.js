@@ -42,37 +42,40 @@ const thaipassDate = [
     {
         img: "image/certificate.jpeg",
         title: "Vaccination Certificate",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Fully vaccinated against COVID-19 no less than 14 days before travelling",
         description: "Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации систем массового участия."
     },
     {
         img: "image/qrcode.jpeg",
         title: "Vaccination QR code",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. " +
+            "",
         description: "Равным образом консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации."
     },
     {
         img: "image/booking.png",
         title: "Hotel booking",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores " +
+            "",
         description: "Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Таким образом дальнейшее развитие различных форм деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки форм развития."
     },
     {
         img: "image/airticket.jpeg",
         title: "Air ticket",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. C" +
+            "",
         description: "Не следует, однако забывать, что новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития. Товарищи! новая модель организационной деятельности играет важную роль в формировании направлений прогрессивного развития. Равным образом сложившаяся структура организации в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям."
     },
     {
         img: "image/pay_pcr.jpeg",
         title: "Reservation of PCR test",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Insurance with minimum coverage of 20,000 USD (not required for Thai nationals / foreign residents in Thailand can use social security or certificate from their employer)",
         description: "Таким образом консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия. Равным образом укрепление и развитие структуры требуют от нас анализа соответствующий условий активизации. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что сложившаяся структура организации играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации."
     },
     {
         img: "image/insurance.jpeg",
         title: "Insurance from Covid-19",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque illo inventore maiores quibusdam quo sit. Commodi eos ex ipsum pariatur quam, quasi suscipit velit!",
+        text: "Insurance with minimum coverage of 20,000 USD (not required for Thai nationals / foreign residents in Thailand can use social security or certificate from their employer)",
         description: "Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач."
     },
 ]
