@@ -123,7 +123,7 @@
 		<p class="app__text">Fully vaccinated travelers may also enter Thailand without quarantine under the Sandbox Programs such as  Pattaya, Phuket or Samui Sandbox. They are required to spend a minimum of 7 nights in an accredited SHA+ Hotel in these Sandbox areas before they will be allowed to travel to other parts of Thailand. Unvaccinated children below 18 years old may travel with vaccinated parents without quarantine under the sandbox program.</p>
 		<span class="app__subtitle">Non-Vaccinated under Quarantine Program</span>
 		<p class="app__text">Non-vaccinated or partially vaccinated travelers are still allowed to travel to Thailand. They must undergo a mandatory quarantine of 10 nights in an accredited ASQ or AQ quarantine hotel before they will be allowed to travel to other parts of Thailand.</p>
-		
+
 
 		<h3 class="app__chapter">What you need for Thailand Pass</h3>
 
@@ -141,7 +141,7 @@
 		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
 			<input type="hidden" name="form_subject" value="Тема письма">
-			<label class="form__label app__section_gray">
+			<label class="form__label">
 				<span class = "form__subtitle">Your name <span class="form__subtitle form__subtitle_required">*</span></span>
 				<input type="text"
 					   class="form__input"
@@ -212,7 +212,7 @@
 	<section id="q&a" class="app__section">
 		<h2 class="app__title">Questions & Answers</h2>
 
-		<ul class="answer__list">
+		<ul class="answer__list app__list">
 		</ul>
 
 	</section>
@@ -252,9 +252,9 @@
 	<li class="answer__list app__list">
 		<div class="element-answer__name">
 			<span class="element-answer__mark">+</span>
-			<h3 class="element-answer__title"></h3>
+			<h3 class="element-answer__title app__subtitle"></h3>
 		</div>
-		<p class="element-answer__text element-answer__text_hide app__text"></p>
+		<p class="app__text element-answer__text element-answer__text_hide"></p>
 	</li>
 </template>
 
@@ -284,12 +284,12 @@
 
 
 <template class="element-news">
-	<li class="news__item">
+	<li class="news__item app__list">
 		<img class="news__img" src="" alt="">
-		<div class="news__box">
-			<p class="news__title"></p>
-			<button class="app__button app__button_transparent">READ NEWS</button>
-		</div>
+<!--		<div class="news__box">-->
+		<p class="news__title"></p>
+		<button class="app__button app__button_transparent news__pos">READ NEWS</button>
+<!--		</div>-->
 	</li>
 </template>
 

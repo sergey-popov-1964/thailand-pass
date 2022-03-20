@@ -33,8 +33,8 @@ class Answer {
         this._elementMark = this._element.querySelector('.element-answer__mark')
         this._elementText = this._element.querySelector('.element-answer__text')
 
-        this._element.querySelector('.app__subtitle').textContent = this._question;
-        this._element.querySelector('.app__text').textContent = this._answer;
+        this._element.querySelector('.element-answer__title').textContent = this._question;
+        this._element.querySelector('.element-answer__text').textContent = this._answer;
 
         this._setEventListeners();
 
