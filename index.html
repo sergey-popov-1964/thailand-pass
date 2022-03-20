@@ -71,7 +71,7 @@
 </header>
 
 <main class="main">
-	<section class="offer app_section">
+	<section class="offer app__section">
 		<h1 class="offer__title">Title</h1>
 		<p class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda cum earum illum ipsa molestiae nemo quo voluptas voluptatibus. A architecto culpa delectus distinctio ipsa, mollitia unde ut velit.</p>
 		<a href="#order" class="header__link app__link">
@@ -79,19 +79,52 @@
 		</a>
 	</section>
 
-	<section>
-		About us
-	</section>
+<!--	<section>-->
+<!--		About us-->
+<!--	</section>-->
 
-	<section id="test&go" class="app_section">
-		<h2 class="app__title">What you need for Test & Go</h2>
+	<section id="test&go" class="app__section">
+
+		<h2 class="app__title">Test and Go Program</h2>
+
+		<h3 class="app__chapter">What is Thailand’s “Test and Go” Program?</h3>
+		<p class="app__text">Thailand resumed having new applications for the country’s Test and Go Program. With this program, fully vaccinated tourists who travel by air from any country will be able to enter the country with no quarantine requirements.</p>
+		<p class="app__text">In this program, tourists will only need to be tested for COVID-19 when they arrive at their SHA+ or ASQ hotels and get a negative result. After getting a negative test result, the travelers will be allowed to travel to other parts of Thailand. A self-test ATK will be performed on the 5th Day in Thailand.</p>
+		<p class="app__text">The “Test and Go” program is, also sometimes referred to as “Exemption from Quarantine”, is one of the latest programs that Thailand’s government implemented to encourage travelers to visit Thailand.</p>
+		<p class="app__text">The government has already recommenced the “Test and Go” program. Under the renewed program, tourists from all countries traveling to Thailand via air travel and who have been vaccinated against COVID-19 are eligible for this program.</p>
+
+		<h3 class="app__chapter">What is the difference between Test & Go and Sandbox?</h3>
+		<p class="app__text">Under Thailand’s “Test and Go” program, tourists can travel all over Thailand after they’ve received a negative test result on their first COVID-19 test. However, on your fifth day, you must do a self-test ATK and report your test result on the Mor Chana mobile app.</p>
+		<p class="app__text">For the Sandbox program, travelers are required to book a 7-night stay in a SHA+ Hotel and they will undergo 1 RT PCR test on Day 1 and ATK test on Day 5 before they are allowed to travel to other parts of Thailand. This program is only available in Phuket, Samui, and Pattaya.</p>
+		<p class="app__text">If you are a fully vaccinated traveler, it is best to apply under the Test and Go Program.</p>
+
+		<h3 class="app__chapter">What you need for Test & Go</h3>
 
 		<ul class="testgo__list card__list">
 		</ul>
 	</section>
 
-	<section id="thaipass" class="app_section">
-		<h2 class="app__title">What you need for Thailand Pass</h2>
+	<section id="thaipass" class="app__section">
+
+		<h2 class="app__title">Thailand Pass</h2>
+
+		<h3 class="app__chapter">What is Thailand Pass?</h3>
+		<p class="app__text">The Thailand Pass system is a free-of-charge web-based system designed to make the documentation process of travelers entering Thailand more efficient than the Certificate of Entry application.
+		</p>
+		<p class="app__text">Just like the Certificate of Entry, it will collect data for entry forms required, but what makes it better than the Certificate of Entry (COE) is that it collects both travel and health information like vaccine certificates.</p>
+		<p class="app__text">Through the Thailand Pass system, the expected documents and other paperwork requirements imposed on by the COVID-19 will be addressed.</p>
+		<p class="app__text">The goal of the new Thailand Pass is to help support the country’s “Ease of Travel” system after it reopens and to expedite the process of filling out information and uploading travel documents.</p>
+
+		<h3 class="app__chapter">Who Can Apply for the Thailand Pass</h3>
+		<p class="app__text">TThe Thailand Pass is required for all travelers whether Thai or foreigners based on the following travel restrictions:</p>
+		<span class="app__subtitle">Fully Vaccinated for the Test and Go Program</span>
+		<p class="app__text">Fully vaccinated travelers, both Thai and foreigners will be allowed to enter Thailand without mandatory quarantine or sandbox stay. They only need to stay for 1 night in an ASQ or SHA+ Hotel while they wait for the COVID 19 RT-PCR test result that was taken upon arrival and another stay for 1 night in an ASQ. Unvaccinated children below 18 years old may travel with vaccinated parents without quarantine.</p>
+		<span class="app__subtitle">Fully Vaccinated under Sandbox Program</span>
+		<p class="app__text">Fully vaccinated travelers may also enter Thailand without quarantine under the Sandbox Programs such as  Pattaya, Phuket or Samui Sandbox. They are required to spend a minimum of 7 nights in an accredited SHA+ Hotel in these Sandbox areas before they will be allowed to travel to other parts of Thailand. Unvaccinated children below 18 years old may travel with vaccinated parents without quarantine under the sandbox program.</p>
+		<span class="app__subtitle">Non-Vaccinated under Quarantine Program</span>
+		<p class="app__text">Non-vaccinated or partially vaccinated travelers are still allowed to travel to Thailand. They must undergo a mandatory quarantine of 10 nights in an accredited ASQ or AQ quarantine hotel before they will be allowed to travel to other parts of Thailand.</p>
+
+		<h3 class="app__chapter">What you need for Thailand Pass</h3>
 
 		<ul class="thaipass__list card__list">
 		</ul>
@@ -102,12 +135,12 @@
 <!--		Info-->
 <!--	</section>-->
 
-	<section id="order">
+	<section id="order" class="app__section app__section_gray">
 		<h2 class="app__title">Send message</h2>
 		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
 			<input type="hidden" name="form_subject" value="Тема письма">
-			<label class="form__label">
+			<label class="form__label app__section_gray">
 				<span class = "form__subtitle">Your name <span class="form__subtitle form__subtitle_required">*</span></span>
 				<input type="text"
 					   class="form__input"
@@ -132,7 +165,7 @@
 					   data-validate-field="tel">
 			</label>
 			<label class="form__label">
-				<span class = "form__subtitle">Arrival date in Thailand  <span class="form__subtitle form__subtitle_required">*</span></span>
+				<span class = "form__subtitle">Arrival date in Thailand</span>
 				<input type="date"
 					   class="form__input"
 					   name="date"
@@ -154,7 +187,7 @@
 			<div class="form__attach">
 			</div>
 
-			<button type="submit" aria-label="submit" class="app__button app__button_transparent form__button" name="form_submit">
+			<button type="submit" aria-label="submit" class="app__button form__button" name="form_submit">
 				Send
 			</button>
 
@@ -162,7 +195,7 @@
 
 	</section>
 
-	<section id="news" class="app_section">
+	<section id="news" class="app__section">
 		<h2 class="app__title">News</h2>
 
 		<ul class="news__list">
@@ -175,7 +208,7 @@
 
 	</section>
 
-	<section id="q&a" class="app_section">
+	<section id="q&a" class="app__section">
 		<h2 class="app__title">Questions & Answers</h2>
 
 		<ul class="answer__list">
@@ -218,7 +251,7 @@
 	<li class="answer__list app__list">
 		<div class="element-answer__name">
 			<span class="element-answer__mark">+</span>
-			<h3 class="element-answer__title app__subtitle"></h3>
+			<h3 class="element-answer__title"></h3>
 		</div>
 		<p class="element-answer__text element-answer__text_hide app__text"></p>
 	</li>

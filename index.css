@@ -62,24 +62,38 @@
     font-weight: 700;
 }
 
+.app__chapter {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: #064867;
+    font-size: 30px;
+    line-height: 45px ;
+    font-weight: 700;
+}
+
 .app__subtitle {
     margin: 0;
     padding: 0;
     text-align: left;
     color: #000000;
-    font-size: 30px;
-    line-height: 36px ;
+    font-size: 18px;
+    line-height: 40px ;
     font-weight: 600;
 }
 
 .app__text {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     text-align: left;
     color: #000000;
-    font-size: 18px;
-    line-height: 30px ;
+    font-size: 16px;
+    line-height: 26px ;
     font-weight: 400;
+}
+
+.app__indent {
+    text-indent: 15px;
 }
 
 .app__list {
@@ -89,10 +103,14 @@
     list-style: none;
 }
 
-.app_section {
+.app__section {
     grid-column: 2/3;
     margin: 0;
     padding: 40px 0 40px 0;
+}
+
+.app__section_gray {
+    background: #e7e7ee;
 }
 
 .app__link {
@@ -137,7 +155,7 @@
 .header__phone {
     align-self: center;
     margin: 0;
-    padding: 10px 0 10px 30px;
+    padding: 0 0 10px 30px;
     text-decoration: none;
     font-size: 18px;
     line-height: 22px;
@@ -152,7 +170,7 @@
 
 .header__email {
     margin: 0;
-    padding: 10px 0 10px 30px;
+    padding: 0 0 10px 30px;
     text-decoration: none;
     font-size: 18px;
     line-height: 22px;
@@ -281,6 +299,12 @@
 }
 
 .element-answer__title {
+    padding: 0;
+    text-align: left;
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px ;
+    font-weight: 600;
     margin: 15px 0 15px 10px;
     grid-row: 1/2;
     grid-column: 2/3;
@@ -509,7 +533,7 @@
     padding: 30px;
     position: relative;
     z-index: 100;
-    background: #FFFFFF;
+    background: #e7e7ee;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
