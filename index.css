@@ -285,11 +285,17 @@
 
 /* --------------------------------- */
 /* Element-answer */
-
-.answer__list {
-    /*padding: 5px;*/
-    /*border: solid .5px #525254;*/
+.answer__content {
+    border-bottom: solid 1px #c0c0d5;
 }
+
+
+/*.answer__list {*/
+/*    !*padding: 5px;*!*/
+/*    !*border: solid .5px #525254;*!*/
+/*    border-bottom: solid 1px #c0c0d5;*/
+
+/*}*/
 
 .element-answer__name {
     border: solid 1px #c0c0d5;
@@ -299,13 +305,16 @@
     grid-auto-flow: column;
     grid-template: auto / 20px 1fr;
     transition: all 1s ease-out;
+    cursor: pointer;
 }
 
-.element-answer__name:last-of-type {
-    border-bottom: #c0c0d5;
-}
+/*.element-answer__name:last-of-type {*/
+/*    border-bottom: #c0c0d5;*/
+/*}*/
 
 .element-answer__mark {
+    margin: 0;
+    padding: 0 5px 0 5px;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
@@ -329,6 +338,9 @@
 
 .element-answer__text {
     /*margin: 0;*/
+    /*visibility: hidden;*/
+
+    transition: visibility 1s ease-out;
     padding: 10px 10px 10px 20px;
     border: solid 1px #c0c0d5;
     border-bottom: none;
@@ -336,7 +348,8 @@
 
 .element-answer__text_hide {
     display: none;
-    transition: all 1s ease-out;
+    visibility: hidden;
+    transition: visibility 1s ease-out;
 }
 
 

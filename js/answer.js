@@ -15,9 +15,19 @@ class Answer {
     }
 
     _setEventListeners() {
-        this._elementMark.addEventListener('click', () => {
-            console.log(this._question)
+        this._elementName.addEventListener('click', () => {
+            let allText = document.querySelectorAll('.element-answer__text')
+            let allMark = document.querySelectorAll('.element-answer__mark')
+            console.log(allMark)
             if(this._elementText.classList.contains('element-answer__text_hide')) {
+                allText.forEach((item) => {
+                    item.classList.add('element-answer__text_hide');
+
+                });
+                allMark.forEach((item) => {
+                    item.textContent = '+'
+
+                });
                 this._elementText.classList.remove('element-answer__text_hide');
                 this._elementMark.textContent = '-'
             }else{
@@ -30,8 +40,10 @@ class Answer {
     generateAnswer() {
         this._element = this._getTemplate();
 
-        this._elementMark = this._element.querySelector('.element-answer__mark')
-        this._elementText = this._element.querySelector('.element-answer__text')
+        this._elementMark = this._element.querySelector('.element-answer__mark');
+        this._elementText = this._element.querySelector('.element-answer__text');
+        this._elementName = this._element.querySelector('.element-answer__name');
+
 
         this._element.querySelector('.element-answer__title').textContent = this._question;
         this._element.querySelector('.element-answer__text').textContent = this._answer;
