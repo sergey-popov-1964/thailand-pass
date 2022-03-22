@@ -72,6 +72,16 @@
     font-weight: 700;
 }
 
+.app__subchapter {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px ;
+    font-weight: 600;
+}
+
 .app__subtitle {
     margin: 0;
     padding: 0;
@@ -374,14 +384,28 @@
 /* --------------------------------- */
 /* ThaiPass */
 
-.card__list {
-    grid-row: 2/3;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
-    gap: 50px;
-}
+/*.card__list {*/
+/*    grid-row: 2/3;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    display: grid;*/
+/*    grid-template: repeat(2, 1fr)/repeat(3, 1fr);*/
+/*    gap: 50px;*/
+/*}*/
+
+
+/* --------------------------------- */
+/* Test & Go Going */
+
+/*.card-going__list {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    display: grid;*/
+/*    grid-template: repeat(2, 1fr)/repeat(4, 1fr);*/
+/*    gap: 50px;*/
+/*}*/
+
+
 
 
 /* --------------------------------- */
@@ -837,7 +861,8 @@
 }
 
 
-
+/* --------------------------------- */
+/* Card */
 
 .card__title {
     margin: 0;
@@ -878,4 +903,74 @@
     margin: 0;
     padding: 10px 0;
     /*align-self: start;*/
+}
+
+/* --------------------------------- */
+/* Going */
+
+
+.going-card__list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    gap: 50px;
+}
+
+.going__title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px ;
+    font-weight: 600;
+}
+
+.going__text {
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: left;
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px ;
+    font-weight: 400;
+}
+
+.going__img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+}
+
+
+.testgo-going__list {
+    grid-row: 2/3;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    gap: 50px;
+}
+
+.going__list {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #2699cc;
+    display: grid;
+    grid-template: max-content 1fr max-content / 1fr;
+}
+
+.going__content {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.going-button__hide {
+    display: none;
 }

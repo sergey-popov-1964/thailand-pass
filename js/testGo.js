@@ -1,7 +1,7 @@
 //Секция Test & Go
-const elementListTestGosSelector = '.testgo__list'; //Куда вставляется в index.html
+const elementListTestGoSelector = '.testgo__list'; //Куда вставляется в index.html
 
-const testGoSection = new Section(elementListTestGosSelector); //экземпляр класса для секции Test & Go
+const testGoSection = new Section(elementListTestGoSelector); //экземпляр класса для секции Test & Go
 
 const elementTestGoSelector = '.element-card';
 
