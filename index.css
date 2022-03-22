@@ -1,7 +1,6 @@
 @import url('vendor/fonts.css');
 @import url('vendor/normalize.css');
 
-
 .card__pos {
     /*align-self: end;*/
     width: 100%;
@@ -348,22 +347,32 @@
 
 .element-answer__text_hide {
     display: none;
-    visibility: hidden;
-    transition: visibility 1s ease-out;
+}
+
+
+.element-answer__text_visible {
+    -webkit-animation-name: element-answer__text_visible;
+    animation-name: element-answer__text_visible;
+    -webkit-animation-duration: 1s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes element-answer__text_visible {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
 
 /* --------------------------------- */
 /* ThaiPass */
-
-
-/*.testgo {*/
-/*    grid-column: 2/3;*/
-/*}*/
-
-/*.thaipass {*/
-/*    grid-column: 2/3;*/
-/*}*/
 
 .card__list {
     grid-row: 2/3;

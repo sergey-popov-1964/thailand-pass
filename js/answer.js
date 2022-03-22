@@ -29,8 +29,11 @@ class Answer {
 
                 });
                 this._elementText.classList.remove('element-answer__text_hide');
+                this._elementText.classList.add('element-answer__text_visible');
+
                 this._elementMark.textContent = '-'
             }else{
+                this._elementText.classList.remove('element-answer__text_visible');
                 this._elementText.classList.add('element-answer__text_hide');
                 this._elementMark.textContent = '+'
             }
