@@ -43,6 +43,10 @@ html {
     transition: all .5s ease;
 }
 
+.app__button:hover {
+    background-color: #064867;
+}
+
 .app__button_transparent {
     background-color: #FFFFFF;
     color: #2699cc;
@@ -51,6 +55,20 @@ html {
 .app__button_transparent:hover {
     background-color: #2699cc;
     color: #FFFFFF;
+}
+
+.app__section_center {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: max-content / 1fr max-content 1fr;
+    /*grid-column: 2/3;*/
+}
+
+.app__position_center {
+    margin: 0;
+    padding: 20px 0 0 0;
+    grid-column: 2/3;
 }
 
 .app__title {
