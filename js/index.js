@@ -64,7 +64,6 @@ class Popup {
 
     // Функция открытия попапа
     open() {
-        console.log("Open popup")
         this._popupElement.classList.add('popup_active');
         document.addEventListener('keydown', this._handleEscClose);
     };

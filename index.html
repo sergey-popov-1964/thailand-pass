@@ -13,11 +13,9 @@
 
 	<div class="header__contact">
 		<a class="header__phone" href="tel:+654545454">
-<!--			<img class="header__contact-img" src="image/phone.png" alt="Phone">-->
 			+7 (845) 568-87-87
 		</a>
 		<a class="header__email" href="mailto:mycompany@me.com">
-<!--			<img class="header__contact-img" src="image/email.png" alt="Email">-->
 			mycompany@me.com
 		</a>
 	</div>
@@ -29,7 +27,7 @@
 
 		<ul class="header__nav">
 			<li class="header__link app__list">
-				<a href="#about" class="header__link app__link">
+				<a href="#" class="header__link app__link">
 					About us
 				</a>
 			</li>
@@ -43,11 +41,7 @@
 					ThaiPass
 				</a>
 			</li>
-<!--			<li class="header__link app__list">-->
-<!--				<a href="#info" class="header__link app__link">-->
-<!--					Info-->
-<!--				</a>-->
-			</li>
+
 			<li class="header__link app__list">
 				<a href="#news" class="header__link app__link">
 					News
@@ -109,7 +103,7 @@
 				<p class="app__text">Checking air tickets</p>
 			</li>
 			<li class="app__list_mark">
-				<p class="app__text">Guaranteed issuance of a Tie Pass</p>
+				<p class="app__text">Guaranteed issuance of a Thai Pass</p>
 			</li>
 		</ul>
 
@@ -191,7 +185,7 @@
 			</li>
 		</ul>
 
-		<p class="app__text">Please note that the costs associated with observation at the hotel or hospitalization are borne by the traveler or covered by his insurance.</p>
+		<p class="app__text">Please note that the costs associated with observation at the hotel or hospitalization are by the traveler or covered by his insurance.</p>
 
 		<div class="app__section_center">
 			<a href="#order" class="header__link app__link app__position_center">
@@ -229,16 +223,13 @@
 
 	</section>
 
-<!--	<section id="info">-->
-<!--		Info-->
-<!--	</section>-->
 
 	<section id="order" class="app__section app__section_gray">
 		<h2 class="app__title">Send message</h2>
-		<form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
+		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<p class="app__text form__text">We are ready to give any answers on the Sandbox and Test & Go programs, to issue documents and a They Pass entry permit, as well as to provide assistance in case of difficulties with self-registration of a Tie Pass permit. In the message, you can send scans of documents.
 				We respond within 30 minutes.</p>
-			<div class="form_send-message">
+<!--			<div class="form_send-message">-->
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
 			<input type="hidden" name="form_subject" value="Тема письма">
 			<label class="form__label">
@@ -291,7 +282,7 @@
 			<button type="submit" aria-label="submit" class="app__button form__button" name="form_submit">
 				Send
 			</button>
-			</div>
+<!--			</div>-->
 		</form>
 
 	</section>
@@ -333,21 +324,21 @@
 
 <div class="popup-info popup">
 	<div class="form popup__form">
-		<h2 class="popup-info__name"></h2>
-		<p class="popup-info__text"></p>
+		<div class="popup__content">
+		<h2 class="popup-info__name app__chapter"></h2>
+		<p class="popup-info__text app__text"></p>
 		<button type="button" class="popup__close"></button>
 	</div>
-</div>
-
-
-
-<!--modal-->
-<div class="modal">
-	<div class="modal__window">
-		<button class="modal__close">Close</button>
-		<h3 class="modal__title">Здесь будет форма</h3>
 	</div>
 </div>
+
+
+<!--<div class="modal">-->
+<!--	<div class="modal__window">-->
+<!--		<button class="modal__close">Close</button>-->
+<!--		<h3 class="modal__title">Здесь будет форма</h3>-->
+<!--	</div>-->
+<!--</div>-->
 
 <template class="element-answer">
 	<li class="answer__list app__list">
@@ -398,10 +389,8 @@
 <template class="element-news">
 	<li class="news__item app__list">
 		<img class="news__img" src="" alt="">
-<!--		<div class="news__box">-->
 		<p class="news__title"></p>
 		<button class="app__button app__button_transparent news__pos">READ NEWS</button>
-<!--		</div>-->
 	</li>
 </template>
 
