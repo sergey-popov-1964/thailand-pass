@@ -28,7 +28,11 @@
 		</div>
 
 		<ul class="header__nav">
-			<li class="header__link app__list">About us</li>
+			<li class="header__link app__list">
+				<a href="#about" class="header__link app__link">
+					About us
+				</a>
+			</li>
 			<li class="header__link app__list">
 				<a href="#test&go" class="header__link app__link">
 					Test&Go
@@ -79,11 +83,67 @@
 		</a>
 	</section>
 
-<!--	<section>-->
-<!--		About us-->
-<!--	</section>-->
+	<section id="trip" class="app__section">
 
-	<section id="test&go" class="app__section">
+		<h2 class="app__title">Trip to Thailand?</h2>
+
+		<p class="app__text">If you are going on a trip to Thailand, we will help you with the paperwork and make your vacation even more enjoyable</p>
+
+		<h3 class="app__subchapter">Get a Thai Pass with a 100% guarantee?</h3>
+		<p class="app__text">We are located in Thailand, work directly with the consulate and are aware of all documentation requirements and are aware of all changes in the issuance of a Thai Pass. We will take care of your concerns</p>
+
+		<ul class="app__list_mark">
+			<li class="app__list_mark">
+				<p class="app__text">Checking the traveler's documents</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Checking (registration) of insurance</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">SHA Extra Hotel Booking +</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Booking a PCR test</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Checking air tickets</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Guaranteed issuance of a Tie Pass</p>
+			</li>
+		</ul>
+
+		<h3 class="app__subchapter">You submitted the documents for registration yourself, but did not receive a Thai Pass?</h3>
+		<p class="app__text">Every day we face cases of refusals or non-issuance of a Tie Pass with self-registration. We know all the reasons and ways to solve them! Contact us and your Tie Pass will be ready without delay. We will be happy to help you:</p>
+
+		<ul class="app__list_mark">
+			<li class="app__list_mark">
+				<p class="app__text">Verification of submitted documents</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Connection with the hotel</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Verification of applications through a representative of the Thai Pass</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Correction of documents (if required)</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Re-submission (if necessary)</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">Urgent issue of a Thai Pass with a guarantee</p>
+			</li>
+		</ul>
+
+		<a href="#order" class="header__link app__link">
+			<button class="app__button header__button order__button">Order</button>
+		</a>
+
+	</section>
+
+	<section id="test&go" class="app__section app__section_border">
 
 		<h2 class="app__title">Test and Go Program</h2>
 
@@ -99,7 +159,6 @@
 		<p class="app__text">If you are a fully vaccinated traveler, it is best to apply under the Test and Go Program.</p>
 
 		<h3 class="app__chapter">What you need for Test & Go</h3>
-
 		<ul class="testgo__list card__list">
 		</ul>
 
@@ -111,15 +170,31 @@
 		<p class="app__text">On the fifth day of your stay in Thailand, you should conduct an express test for coronavirus. The test is conducted at the hotel and takes 10-30 minutes. The test results are recorded by the hotel employee.</p>
 
 		<h4 class="app__subchapter">We have prepared an infographic in which we explain the Test & Go program in detail in 10 steps.</h4>
-
-
-
 		<ul class="testgo-going__list">
 		</ul>
 
+		<h3 class="app__chapter">What happens if the Covid-19 coronavirus is detected?</h3>
+		<p class="app__text">If the COVID-19 coronavirus infection is detected in travelers staying in the same room with you, and your test result is negative— you can continue your vacation without restrictions.</p>
+		<p class="app__text">If you have a coronavirus infection, the following conditions apply, which you must follow:</p>
+
+		<ul class="app__list_mark">
+			<li class="app__list_mark">
+				<p class="app__text">A representative of the hotel will contact you, inform you about the positive test result and inform you about further actions</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">The traveler must immediately go to his hotel room and stay in it continuously according to the instructions of medical professionals</p>
+			</li>
+			<li class="app__list_mark">
+				<p class="app__text">After the end of the observation in the hotel room, you can continue your vacation without restrictions</p>
+			</li>
+		</ul>
+
+		<p class="app__text">Please note that the costs associated with observation at the hotel or hospitalization are borne by the traveler or covered by his insurance.</p>
+
+
 	</section>
 
-	<section id="thaipass" class="app__section">
+	<section id="thaipass" class="app__section app__section_border">
 
 		<h2 class="app__title">Thailand Pass</h2>
 
@@ -153,7 +228,10 @@
 
 	<section id="order" class="app__section app__section_gray">
 		<h2 class="app__title">Send message</h2>
-		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
+		<form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
+			<p class="app__text form__text">We are ready to give any answers on the Sandbox and Test & Go programs, to issue documents and a They Pass entry permit, as well as to provide assistance in case of difficulties with self-registration of a Tie Pass permit. In the message, you can send scans of documents.
+				We respond within 30 minutes.</p>
+			<div class="form_send-message">
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
 			<input type="hidden" name="form_subject" value="Тема письма">
 			<label class="form__label">
@@ -206,7 +284,7 @@
 			<button type="submit" aria-label="submit" class="app__button form__button" name="form_submit">
 				Send
 			</button>
-
+			</div>
 		</form>
 
 	</section>
@@ -224,7 +302,7 @@
 
 	</section>
 
-	<section id="q&a" class="app__section">
+	<section id="q&a" class="app__section app__section_border">
 		<h2 class="app__title">Questions & Answers</h2>
 		<div class="answer__content">
 			<ul class="answer__list app__list">
