@@ -151,7 +151,7 @@ html {
 .app__section {
     grid-column: 2/3;
     margin: 0;
-    padding: 40px 0 40px 0;
+    padding: calc(16px + (40 - 16) * ((100vw - 280px) / (1280 - 280))) 0;
 }
 
 .app__section_border {
