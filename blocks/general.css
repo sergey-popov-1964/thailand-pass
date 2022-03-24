@@ -165,7 +165,6 @@ html {
 
     font-size: calc(14px + (22 - 14) * ((100vw - 280px) / (1280 - 280)));
 
-
     /*font-size: 22px;*/
     list-style: disc;
 
