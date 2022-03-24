@@ -18,7 +18,6 @@ class Answer {
         this._elementName.addEventListener('click', () => {
             let allText = document.querySelectorAll('.element-answer__text')
             let allMark = document.querySelectorAll('.element-answer__mark')
-            console.log(allMark)
             if(this._elementText.classList.contains('element-answer__text_hide')) {
                 allText.forEach((item) => {
                     item.classList.add('element-answer__text_hide');

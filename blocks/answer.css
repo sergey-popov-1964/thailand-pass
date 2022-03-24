@@ -1,0 +1,63 @@
+/* --------------------------------- */
+/* Answer */
+.answer__content {
+    border-bottom: solid 1px #c0c0d5;
+}
+
+.element-answer__name {
+    border: solid 1px #c0c0d5;
+    border-bottom: none;
+    background: #f1f1f5;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: auto / 20px 1fr;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.element-answer__mark {
+    margin: 0;
+    padding: 0 5px 0 5px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.element-answer__title {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    line-height: 60px;
+}
+
+.element-answer__text {
+    transition: visibility 1s ease-out;
+    padding: 10px 10px 10px 20px;
+    border: solid 1px #c0c0d5;
+    border-bottom: none;
+}
+
+.element-answer__text_hide {
+    display: none;
+}
+
+.element-answer__text_visible {
+    -webkit-animation-name: element-answer__text_visible;
+    animation-name: element-answer__text_visible;
+    -webkit-animation-duration: 1s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes element-answer__text_visible {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}

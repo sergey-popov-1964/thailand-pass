@@ -24,7 +24,7 @@ class Card {
         return document
             .querySelector(this._newSelector)
             .content
-            .querySelector('.card_list')
+            .querySelector('.element-card__list')
             .cloneNode(true);
     }
 
