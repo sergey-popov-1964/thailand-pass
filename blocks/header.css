@@ -28,11 +28,8 @@
     align-self: center;
     margin: 0;
     padding: 0 0 10px 0;
-    /*padding-right: calc(14px + (18 - 14) * ((100vw - 280px) / (1280 - 280)));;*/
-
     text-decoration: none;
 
-    
     font-size: calc(14px + (18 - 14) * ((100vw - 280px) / (1280 - 280)));
     line-height: calc(18px + (22 - 18) * ((100vw - 280px) / (1280 - 280)));
 

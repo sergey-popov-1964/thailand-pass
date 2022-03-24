@@ -2,24 +2,38 @@
 /* Offer */
 .offer {
     background: linear-gradient(to right, rgba(38,153,204,0.8) , rgba(38,153,204,0)) ,url("/image/offer_img.jpeg") no-repeat center top /cover;
-    padding: 200px 0 120px 100px;
+    /*padding: 200px 0 120px 100px;*/
+
+    padding-top: calc(50px + (200 - 50) * ((100vw - 280px) / (1280 - 280)));
+    padding-right: calc(20px + (200 - 50) * ((100vw - 280px) / (1280 - 280)));
+    padding-bottom: calc(50px + (120 - 50) * ((100vw - 280px) / (1280 - 280)));
+    padding-left: calc(20px + (100 - 20) * ((100vw - 280px) / (1280 - 280)));
+
+
+
 }
 
 .offer__title {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: calc(30px + (70 - 30) * ((100vw - 280px) / (1280 - 280)));
+    /*line-height: calc(18px + (22 - 18) * ((100vw - 280px) / (1280 - 280)));*/
+
+    /*font-size: 70px;*/
     font-weight: 800;
 }
 
 .offer__subtitle {
-    margin: 40px 0 0 0;
+    /*margin: 40px 0 0 0;*/
     padding: 0;
     color: #FFFFFF;
-    font-size: 20px;
+
+    font-size: calc(12px + (20 - 12) * ((100vw - 280px) / (1280 - 280)));
+
+    /*font-size: 20px;*/
     font-weight: 400;
-    width: 700px;
+    max-width: 700px;
 }
 
 .offer__button {
