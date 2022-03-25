@@ -2,6 +2,7 @@
 /* Card */
 
 .card__title {
+    /*grid-row: 1/2;*/
     margin: 0;
     padding: 0;
     text-align: left;
@@ -12,6 +13,7 @@
 }
 
 .card__text {
+    /*grid-row: 2/3;*/
     margin: 0;
     padding: 10px 0 0 0;
     text-align: left;
@@ -39,6 +41,8 @@
 .card__content {
     margin: 0;
     padding: 10px 0;
+    /*display: grid;*/
+    /*grid-template: 1fr max-content / 1fr;*/
     /*align-self: start;*/
 }
 
@@ -60,4 +64,42 @@
     object-position: center;
     height: 200px;
     width: 100%;
+}
+
+@media screen and (max-width: 1280px){
+    .card__img {
+        height: calc(120px + (200 - 120) * ((100vw - 800px) / (1280 - 800)));
+    }
+
+    .card__list {
+        gap: calc(25px + (50 - 25) * ((100vw - 800px) / (1280 - 800)));
+    }
+
+    .card__title {
+        font-size: calc(15px + (18 - 15) * ((100vw - 800px) / (1280 - 800)));
+        line-height: calc(19px + (22 - 19) * ((100vw - 800px) / (1280 - 800)));
+    }
+
+    .card__text {
+        font-size: calc(13px + (16 - 13) * ((100vw - 800px) / (1280 - 800)));
+        line-height: calc(16px + (20 - 16) * ((100vw - 800px) / (1280 - 800)));
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .card__list {
+        grid-template: auto/repeat(2, 1fr);
+        gap: calc(25px + (40 - 25) * ((100vw - 500px) / (800 - 500)));
+    }
+
+    .card__img {
+        height: calc(100px + (200 - 100) * ((100vw - 500px) / (800 - 500)));
+    }
+
+    /*.card__img {*/
+    /*    height: calc(24px + (30 - 24) * ((100vw - 280px) / (1280 - 280)));*/
+    /*}*/
+
 }
