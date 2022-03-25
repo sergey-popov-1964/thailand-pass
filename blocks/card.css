@@ -46,7 +46,7 @@
     /*align-self: start;*/
 }
 
-.card__pos {
+.card__button {
     width: 100%;
 }
 
@@ -98,8 +98,35 @@
         height: calc(100px + (200 - 100) * ((100vw - 500px) / (800 - 500)));
     }
 
-    /*.card__img {*/
-    /*    height: calc(24px + (30 - 24) * ((100vw - 280px) / (1280 - 280)));*/
-    /*}*/
+}
+
+@media screen and (max-width: 500px){
+    .card__list {
+        /*padding: 0 50px;*/
+        padding: 0 calc(5px + (50 - 5) * ((100vw - 280px) / (500 - 280)));;
+        grid-template: auto/ 1fr;
+        /*gap: calc(25px + (40 - 25) * ((100vw - 500px) / (800 - 500)));*/
+    }
+
+    .card__img {
+        height: calc(100px + (200 - 100) * ((100vw - 280px) / (500 - 280)));
+    }
+
+    .card__text {
+        font-size: calc(13px + (15 - 13) * ((100vw - 280px) / (500 - 280)));
+        line-height: calc(16px + (20 - 16) * ((100vw - 280px) / (500 - 280)));
+    }
+
+
+    .card__button {
+        padding: calc(5px + (10 - 5) * ((100vw - 280px) / (500 - 280))) calc(10px + (20 - 10) * ((100vw - 280px) / (500 - 280)));;
+        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (500 - 280)));
+        line-height: calc(14px + (20 - 14) * ((100vw - 280px) / (500 - 280)));
+    }
+
+    .card__title {
+        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (500 - 280)));
+        line-height: calc(14px + (20 - 14) * ((100vw - 280px) / (500 - 280)));
+    }
 
 }

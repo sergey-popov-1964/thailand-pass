@@ -214,20 +214,13 @@ html {
     }
 
     .app__button {
-        /*margin: 0;*/
         padding: calc(5px + (10 - 5) * ((100vw - 280px) / (1280 - 280))) calc(10px + (20 - 10) * ((100vw - 280px) / (1280 - 280)));
-        /*min-width: 96px;*/
-        /*min-height: 36px;*/
-        /*outline: none;*/
-        /*border: 1px solid #2699cc;*/
-        /*background-color: #2699cc;*/
-        /*font-family: inherit;*/
-        /*font-weight: 500;*/
         font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (1280 - 280)));
         line-height: calc(14px + (20 - 14) * ((100vw - 280px) / (1280 - 280)));
-        /*color: #FFFFFF;*/
-        /*text-decoration: none;*/
-        /*cursor: pointer;*/
-        /*transition: all .5s ease;*/
+    }
+
+    .app__chapter {
+        font-size: calc(16px + (30 - 16) * ((100vw - 280px) / (1280 - 280)));
+        line-height: calc(25px + (45 - 25) * ((100vw - 280px) / (1280 - 280)));
     }
 }
