@@ -114,9 +114,9 @@
 @media screen and (max-width: 500px){
     .card__list {
         /*padding: 0 50px;*/
-        padding: 0 calc(5px + (50 - 5) * ((100vw - 280px) / (500 - 280)));;
+        padding: 0 calc(5px + (50 - 5) * ((100vw - 280px) / (500 - 280)));
         grid-template: auto/ 1fr;
-        /*gap: calc(25px + (40 - 25) * ((100vw - 500px) / (800 - 500)));*/
+        gap: calc(10px + (30 - 10) * ((100vw - 280px) / (500 - 280)));
     }
 
     .card__img {

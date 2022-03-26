@@ -142,32 +142,18 @@
     .testgo-going__list {
         padding: 0 calc(5px + (50 - 5) * ((100vw - 280px) / (500 - 280)));;
         grid-template: auto/ 1fr;
-
-        /*padding: 0 calc(5px + (50 - 5) * ((100vw - 280px) / (500 - 280)));*/
-        /*grid-template: auto / 1fr;*/
-        /*gap: calc(15px + (30 - 15) * ((100vw - 500px) / (700 - 500)));*/
+        gap: calc(10px + (30 - 10) * ((100vw - 280px) / (500 - 280)));
     }
-
-    /*.going__title {*/
-    /*    font-size: calc(13px + (15 - 13) * ((100vw - 280px) / (500 - 280)));*/
-    /*    line-height: calc(17px + (20 - 17) * ((100vw - 280px) / (500 - 280)));*/
-    /*}*/
 
     .going__title {
         font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (500 - 280)));
         line-height: calc(14px + (20 - 14) * ((100vw - 280px) / (500 - 280)));
     }
 
-    /*.going__text {*/
-    /*    font-size: calc(12px + (14 - 12) * ((100vw - 500px) / (700 - 500)));*/
-    /*    line-height: calc(14px + (16 - 14) * ((100vw - 500px) / (700 - 500)));*/
-    /*}*/
-
     .going__text {
         font-size: calc(13px + (15 - 13) * ((100vw - 280px) / (500 - 280)));
         line-height: calc(16px + (20 - 16) * ((100vw - 280px) / (500 - 280)));
     }
-
 
     .going__img {
         height: calc(100px + (150 - 100) * ((100vw - 280px) / (500 - 280)));
