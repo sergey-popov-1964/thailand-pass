@@ -90,8 +90,19 @@
 
 @media screen and (max-width: 800px){
     .card__list {
+        padding: 0 calc(5px + (40 - 5) * ((100vw - 500px) / (800 - 500)));
         grid-template: auto/repeat(2, 1fr);
         gap: calc(25px + (40 - 25) * ((100vw - 500px) / (800 - 500)));
+    }
+
+    .card__title {
+        font-size: calc(13px + (16 - 13) * ((100vw - 500px) / (800 - 500)));
+        line-height: calc(17px + (20 - 17) * ((100vw - 500px) / (800 - 500)));
+    }
+
+    .card__text {
+        font-size: calc(12px + (14 - 12) * ((100vw - 500px) / (800 - 500)));
+        line-height: calc(15px + (18 - 14) * ((100vw - 500px) / (800 - 500)));
     }
 
     .card__img {
