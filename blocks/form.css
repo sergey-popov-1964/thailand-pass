@@ -9,6 +9,7 @@
     background: #f1f1f5;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 /*.form_send-message {*/
@@ -221,9 +222,8 @@
 
 @media screen and (max-width: 800px){
 
-    .form__list {
-        grid-template: auto / 1fr;
-        gap: 10px;
+    .form__item {
+        grid-column: 1/3;
     }
 
     .form__label_textarea {
@@ -237,13 +237,8 @@
     /*}*/
 
     .form__input {
-        grid-column: 1/3;
-        font-size: calc(15px + (18 - 15) * ((100vw - 800px) / (1280 - 800)));
-        line-height: calc(20px + (24 - 20) * ((100vw - 800px) / (1280 - 800)));
-    }
-
-    .form__item_textarea {
-        grid-column: 1/2;
+        font-size: calc(15px + (18 - 15) * ((100vw - 500px) / (800 - 500)));
+        line-height: calc(20px + (24 - 20) * ((100vw - 500px) / (800 - 500)));
     }
 
     .form__attach {
