@@ -63,7 +63,7 @@ const buttonPrev = document.querySelector('.news__prev') //селектор кн
 const removeNews = (firstNews, lastNews) => {
     //Удаление видимости у текущих новостей
     for (let i = firstNews; i <= lastNews; i++) {
-        itemsSlider[i].classList.remove('news__item_active');
+        itemsSlider[i].classList.add('news__item_hide');
     }
 }
 
@@ -71,7 +71,7 @@ const addNews = (firstNews, lastNews) => {
 
     //Присвоение видимости у текущих новостей
     for (let i = firstNews; i <= lastNews; i++) {
-        itemsSlider[i].classList.add('news__item_active');
+        itemsSlider[i].classList.remove('news__item_hide');
     }
 }
 
@@ -135,7 +135,7 @@ buttonPrev.addEventListener('click', prevSlide);
 
 
 for (let i = firstSlideNews; i <= lastSlideNews; i++) {
-    itemsSlider[i].classList.add('news__item_active');
+    itemsSlider[i].classList.remove('news__item_hide');
 }
 
 buttonPrev.setAttribute("disabled", "disabled");
