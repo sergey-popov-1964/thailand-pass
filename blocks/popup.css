@@ -16,12 +16,43 @@
     transition: visibility 1s, opacity 0.5s linear;
 }
 
-.popup_active {
+
+.popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    /*display: grid;*/
+    /*grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+
+.popup__info {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;
+}
+
+.popup__overlay_active {
+    /*animation: popup-menu_visible .5s linear both;*/
+    /*transform: translateX(-50%);*/
     visibility: visible;
     opacity: 1;
+    /*transition: all .5s linear;*/
 }
 
 .popup__form {
+    position: relative;
+    z-index: 100;
+    background: #f1f1f5;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;
+
+
     min-height: 50vh;
     width:  calc((100vw - (100vw - 1240px)) / 100 * 75);
     margin: 0;
@@ -30,7 +61,17 @@
     grid-column: 2/3;
     box-sizing: border-box;
     border: 2px solid #2699cc;
+    visibility: hidden;
+    opacity: 0;
+}
 
+
+.popup__form_active {
+    /*animation: popup-menu_visible .5s linear both;*/
+    /*transform: translateX(-50%);*/
+    visibility: visible;
+    opacity: 1;
+    /*transition: all .5s linear;*/
 }
 
 .popup__content {
@@ -50,7 +91,6 @@
     right: 10px;
     border: none;
     outline: none;
-    /*background-color: rgba(0, 0, 0, 0);*/
     color: #FFFFFF;
     cursor: pointer;
     transform: rotate(45deg);
@@ -58,4 +98,64 @@
 
 .popup__close:hover {
     opacity: .6;
+}
+
+/*.popup-menu_visible {*/
+/*    animation: popup-menu_visible .5s linear both;*/
+/*}*/
+
+
+@-webkit-keyframes popup-menu_visible {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.popup-burger__active {
+    /*animation: popup-menu_visible .5s linear both;*/
+    transform: translateX(-50%);
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s linear;
+}
+
+
+.popup__burger-menu {
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    transition: right 1s ease 0s;
+
+
+    /*right: 0;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*z-index: 100;*/
+    /*background-color: #FFFFFF;*/
+    /*transform: translateX(100%);*/
+    /*transition: visibility .5s, left 1s linear;*/
+
+
+
+    /*display: grid;*/
+    /*grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;*/
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+    /*animation: popup-menu_visible .5s linear both;*/
+}
+
+.popup__burger-menu._active {
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+    right: 0;
 }

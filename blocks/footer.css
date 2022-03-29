@@ -8,7 +8,8 @@
     display: grid;
     column-gap: 50px;
     grid-auto-flow: column;
-    grid-template: auto / max-content;
+    grid-template: auto / repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
     align-self: center;
 }
@@ -16,14 +17,17 @@
 
 .footer__text {
     padding: 0;
-
     font-size: calc(14px + (18 - 14) * ((100vw - 800px) / (1280 - 800)));
     line-height: calc(18px + (26 - 18) * ((100vw - 800px) / (1280 - 800)));
-
-
-
-    /*font-size: 16px;*/
-    /*line-height: 26px ;*/
     font-weight: 400;
     color: #2699cc;
+}
+
+@media screen and (max-width: 500px){
+
+    .footer {
+        grid-auto-flow: row;
+        grid-template: auto / 1fr;
+    }
+
 }

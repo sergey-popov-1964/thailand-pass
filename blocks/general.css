@@ -1,3 +1,23 @@
+/*.burger {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    width: 100%;*/
+/*    z-index: 100;*/
+/*    background-color: #FFFFFF;*/
+/*    padding: 10px 0 0 0;*/
+/*    display: grid;*/
+/*    grid-template:repeat(3, auto) /1fr minmax(auto, 1240px) 1fr;*/
+/*}*/
+
+/*.test {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    grid-column: 2/3;*/
+
+/*}*/
+
+
 .main {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -71,6 +91,7 @@ html {
 }
 
 .app__title {
+    z-index: 100;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -119,6 +140,10 @@ html {
     font-size: 16px;
     line-height: 26px ;
     font-weight: 400;
+}
+
+.app__text_footer {
+    color: #2699cc;
 }
 
 .app__mark {

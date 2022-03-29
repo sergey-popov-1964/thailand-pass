@@ -50,10 +50,13 @@ class Card {
 }
 
 class Popup {
-    constructor(popupSelector) {
-        this._popupElement = document.querySelector(popupSelector);
-        this._popupCloseButton = document.querySelector(popupSelector).querySelector('.popup__close');
+    constructor(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive) {
+        this._popupOverlaySelector = document.querySelector(popupOverlaySelector);
+        this._popupFormSelector = document.querySelector(popupFormSelector);
+        this._popupCloseButton = document.querySelector(popupFormSelector).querySelector('.popup__close');
         this._handleEscClose = this._handleEscClose.bind(this);
+        this._handlerOverlayActive = handlerOverlayActive;
+        this._handlerFormActive = handlerFormActive;
     }
 
     _handleEscClose(evt) {
@@ -64,13 +67,15 @@ class Popup {
 
     // Функция открытия попапа
     open() {
-        this._popupElement.classList.add('popup_active');
+        this._popupOverlaySelector.classList.add(this._handlerOverlayActive);
+        this._popupFormSelector.classList.add(this._handlerFormActive);
         document.addEventListener('keydown', this._handleEscClose);
     };
 
     // Функция закрытия попапа с формой
     close() {
-        this._popupElement.classList.remove('popup_active');
+        this._popupOverlaySelector.classList.remove(this._handlerOverlayActive);
+        this._popupFormSelector.classList.remove(this._handlerFormActive);
         document.removeEventListener('keydown', this._handleEscClose);
     };
 
@@ -81,7 +86,7 @@ class Popup {
         });
 
         // Закрытие попапов при клике на оверлей
-        this._popupElement.addEventListener('click', (evt) => {
+        this._popupOverlaySelector.addEventListener('click', (evt) => {
             if (evt.target === evt.currentTarget) {
                 this.close();
             }
@@ -90,10 +95,10 @@ class Popup {
 }
 
 class PopupInfo extends Popup {
-    constructor(popupSelector) {
-        super(popupSelector);
-        this._name = this._popupElement.querySelector('.popup-info__name');
-        this._text = this._popupElement.querySelector('.popup-info__text');
+    constructor(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive) {
+        super(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive);
+        this._name = this._popupFormSelector.querySelector('.popup-info__name');
+        this._text = this._popupFormSelector.querySelector('.popup-info__text');
     }
 
     open(name, text) {
@@ -103,10 +108,55 @@ class PopupInfo extends Popup {
     }
 }
 
+class PopupMenu extends Popup {
+    constructor(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive) {
+        super(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive);
+        // this._name = this._popupElement.querySelector('.popup-info__name');
+        // this._text = this._popupElement.querySelector('.popup-info__text');
+    }
+
+    open() {
+        super.open();
+        // this._name.textContent = name;
+        // this._text.textContent = text;
+    }
+}
+
 
 //Создание инстанса для попапа
-const elementPopupInfoSelector = '.popup-info';
-const popupInfo = new PopupInfo(elementPopupInfoSelector);
+const elementPopupOverlaySelector = '.popup__overlay';
+
+const elementPopupFormSelector = '.popup__form';
+const popupInfo = new PopupInfo(elementPopupOverlaySelector, elementPopupFormSelector, 'popup__overlay_active', 'popup__form_active' );
 popupInfo.setEventListeners();
 
 
+
+const elementPopupMenuSelector = '.popup__burger-menu';
+const popupMenu = new PopupMenu(elementPopupOverlaySelector, elementPopupMenuSelector, 'popup__overlay_active', '_active' );
+popupMenu.setEventListeners();
+
+// const elementPopupMenuSelector = '.popup-menu';
+// const popupMenu = new PopupInfo(elementPopupMenuSelector, 'popup-burger__active');
+// popupMenu.setEventListeners();
+
+
+document.querySelector('.header__img').addEventListener('click', () => {
+    popupMenu.open();
+});
+
+const menuLinks = document.querySelectorAll('.menu__link');
+menuLinks.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        console.log(1234567)
+        popupMenu.close();
+    })
+});
+
+
+
+
+
+// document.querySelectorAll('.menu__link').addEventListener('click', () => {
+//     popupMenu.close();
+// });

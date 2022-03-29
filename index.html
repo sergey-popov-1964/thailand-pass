@@ -9,64 +9,123 @@
 
 <body class="page">
 
-<header class="header">
-
-	<div class="header__contact">
-		<a class="header__phone" href="tel:+654545454">
-			+7 (845) 568-87-87
-		</a>
-		<a class="header__email" href="mailto:mycompany@me.com">
-			mycompany@me.com
-		</a>
-	</div>
-
-	<div class="header__menu">
-		<div class="header__logo">
-			<img class="header__img" src="image/logo-nav.png" alt="Logo">
-		</div>
-
-		<ul class="header__nav">
-			<li class="header__link app__list">
-				<a href="#" class="header__link app__link">
-					About us
-				</a>
-			</li>
-			<li class="header__link app__list">
-				<a href="#test&go" class="header__link app__link">
-					Test&Go
-				</a>
-			</li>
-			<li class="header__link app__list">
-				<a href="#thaipass" class="header__link app__link">
-					ThaiPass
-				</a>
-			</li>
-
-			<li class="header__link app__list">
-				<a href="#news" class="header__link app__link">
-					News
-				</a>
-			</li>
-			<li class="header__link app__list">
-				<a href="#q&a" class="header__link app__link">
-					Q&A
-				</a>
-			</li>
-			<li class="header__link app__list">
-				<a href="#contact" class="header__link app__link">
-					Contact
-				</a>
-			</li>
-		</ul>
-
-		<div class="header__order">
-			<a href="#order" class="header__link app__link">
-				<button class="app__button header__button order__button">Order</button>
+<div class="burger">
+	<div class="test">
+		<div class="header__contact">
+			<a class="header__phone" href="tel:+654545454">
+				+7 (845) 568-87-87
+			</a>
+			<a class="header__email" href="mailto:mycompany@me.com">
+				mycompany@me.com
 			</a>
 		</div>
+		<div class="header__menu">
+			<div class="header__logo">
+				<img class="header__img" src="image/logo-nav.png" alt="Logo">
+			</div>
+
+			<ul class="header__nav">
+				<li class="header__link app__list">
+					<a href="#" class="header__link app__link">
+						About us
+					</a>
+				</li>
+				<li class="header__link app__list">
+					<a href="#test&go" class="header__link app__link">
+						Test&Go
+					</a>
+				</li>
+				<li class="header__link app__list">
+					<a href="#thaipass" class="header__link app__link">
+						ThaiPass
+					</a>
+				</li>
+
+				<li class="header__link app__list">
+					<a href="#news" class="header__link app__link">
+						News
+					</a>
+				</li>
+				<li class="header__link app__list">
+					<a href="#q&a" class="header__link app__link">
+						Q&A
+					</a>
+				</li>
+				<li class="header__link app__list">
+					<a href="#contact" class="header__link app__link">
+						Contact
+					</a>
+				</li>
+			</ul>
+
+			<div class="header__order">
+				<a href="#order" class="header__link app__link">
+					<button class="app__button header__button order__button">Order</button>
+				</a>
+			</div>
+		</div>
 	</div>
 
-</header>
+</div>
+
+<!--<header class="header">-->
+
+<!--	<div class="header__contact">-->
+<!--		<a class="header__phone" href="tel:+654545454">-->
+<!--			+7 (845) 568-87-87-->
+<!--		</a>-->
+<!--		<a class="header__email" href="mailto:mycompany@me.com">-->
+<!--			mycompany@me.com-->
+<!--		</a>-->
+<!--	</div>-->
+
+<!--	<div class="header__menu">-->
+<!--		<div class="header__logo">-->
+<!--			<img class="header__img" src="image/logo-nav.png" alt="Logo">-->
+<!--		</div>-->
+
+<!--		<ul class="header__nav">-->
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#" class="header__link app__link">-->
+<!--					About us-->
+<!--				</a>-->
+<!--			</li>-->
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#test&go" class="header__link app__link">-->
+<!--					Test&Go-->
+<!--				</a>-->
+<!--			</li>-->
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#thaipass" class="header__link app__link">-->
+<!--					ThaiPass-->
+<!--				</a>-->
+<!--			</li>-->
+
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#news" class="header__link app__link">-->
+<!--					News-->
+<!--				</a>-->
+<!--			</li>-->
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#q&a" class="header__link app__link">-->
+<!--					Q&A-->
+<!--				</a>-->
+<!--			</li>-->
+<!--			<li class="header__link app__list">-->
+<!--				<a href="#contact" class="header__link app__link">-->
+<!--					Contact-->
+<!--				</a>-->
+<!--			</li>-->
+<!--		</ul>-->
+
+<!--		<div class="header__order">-->
+<!--			<a href="#order" class="header__link app__link">-->
+<!--				<button class="app__button header__button order__button">Order</button>-->
+<!--			</a>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--</header>-->
 
 <main class="main">
 	<section class="offer app__section">
@@ -229,7 +288,6 @@
 		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<p class="app__text form__text">We are ready to give any answers on the Sandbox and Test & Go programs, to issue documents and a They Pass entry permit, as well as to provide assistance in case of difficulties with self-registration of a Tie Pass permit. In the message, you can send scans of documents.
 				We respond within 30 minutes.</p>
-<!--			<div class="form_send-message">-->
 			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
 			<input type="hidden" name="form_subject" value="Тема письма">
 			<ul class="form__list">
@@ -288,61 +346,12 @@
 				</li>
 			</ul>
 
-
-
-
-
-<!--			<label class="form__label">-->
-<!--				<span class = "form__subtitle">Your name <span class="form__subtitle form__subtitle_required">*</span></span>-->
-<!--				<input type="text"-->
-<!--					   class="form__input"-->
-<!--					   name="name"-->
-<!--					   placeholder="Name"-->
-<!--					   data-validate-field="name">-->
-<!--			</label>-->
-<!--			<label class="form__label">-->
-<!--				<span class = "form__subtitle">Your e-mail <span class="form__subtitle form__subtitle_required">*</span></span>-->
-<!--				<input type="email"-->
-<!--					   class="form__input"-->
-<!--					   name="order_email"-->
-<!--					   placeholder="E-mail"-->
-<!--					   data-validate-field="email">-->
-<!--			</label>-->
-<!--			<label class="form__label">-->
-<!--				<span class = "form__subtitle">Your phone number  <span class="form__subtitle form__subtitle_required">*</span></span>-->
-<!--				<input type="tel"-->
-<!--					   class="form__input"-->
-<!--					   name="order_phone"-->
-<!--					   placeholder="Phone"-->
-<!--					   data-validate-field="tel">-->
-<!--			</label>-->
-<!--			<label class="form__label">-->
-<!--				<span class = "form__subtitle">Arrival date in Thailand</span>-->
-<!--				<input type="date"-->
-<!--					   class="form__input"-->
-<!--					   name="date"-->
-<!--					   placeholder="Date"-->
-<!--					   data-validate-field="date">-->
-<!--			</label>-->
-<!--			<label class="form__label form__label_textarea">-->
-<!--				<span class = "form__subtitle">Enter your question</span>-->
-<!--				<textarea type="text"-->
-<!--						  id="input-question"-->
-<!--						  class="form__input"-->
-<!--						  name="order_question"-->
-<!--						  placeholder="Your question"-->
-<!--						  rows="4"-->
-<!--						  cols="50">-->
-<!--				</textarea>-->
-<!--			</label>-->
-
 			<div class="form__attach">
 			</div>
 
 			<button type="submit" aria-label="submit" class="app__button form__button" name="form_submit">
 				Send
 			</button>
-<!--			</div>-->
 		</form>
 
 	</section>
@@ -360,19 +369,19 @@
 
 	</section>
 
-<!--	<section id="q&a" class="app__section app__section_border">-->
-<!--		<h2 class="app__title">Questions & Answers</h2>-->
-<!--		<div class="answer__content">-->
-<!--			<ul class="answer__list app__list">-->
-<!--			</ul>-->
-<!--		</div>-->
+	<section id="q&a" class="app__section app__section_border">
+		<h2 class="app__title">Questions & Answers</h2>
+		<div class="answer__content">
+			<ul class="answer__list app__list">
+			</ul>
+		</div>
 
-<!--	</section>-->
+	</section>
 
-<!--	<section id="contact" class="footer">-->
-<!--		<p>Email: company@me.com</p>-->
-<!--		<p>Tel: +xxx xxx xxx</p>-->
-<!--	</section>-->
+	<section id="contact" class="footer">
+		<p class="app__text app__text_footer">Email: company@me.com</p>
+		<p class="app__text app__text_footer">Tel: +xxx xxx xxx</p>
+	</section>
 
 </main>
 
@@ -382,7 +391,7 @@
 </footer>
 
 
-<div class="popup-info popup">
+<div class="popup__overlay">
 	<div class="form popup__form">
 		<div class="popup__content">
 		<h2 class="popup-info__name app__chapter"></h2>
@@ -391,6 +400,51 @@
 	</div>
 	</div>
 </div>
+
+
+<!--<div class="popup-menu popup">-->
+	<div class="popup__burger-menu">
+        <ul class="menu__nav">
+            <li class="app__list">
+                <a href="#" class="app__link menu__link">
+                    About us
+                </a>
+            </li>
+            <li class="app__list">
+                <a href="#test&go" class="app__link menu__link">
+                    Test&Go
+                </a>
+            </li>
+            <li class="app__list">
+                <a href="#thaipass" class="app__link menu__link">
+                    ThaiPass
+                </a>
+            </li>
+
+            <li class="app__list">
+                <a href="#news" class="app__link menu__link">
+                    News
+                </a>
+            </li>
+            <li class="app__list">
+                <a href="#q&a" class="app__link menu__link">
+                    Q&A
+                </a>
+            </li>
+            <li class="app__list">
+                <a href="#contact" class="app__link menu__link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+<!--		<div >-->
+<!--			<h2 class="popup-info__name app__chapter"></h2>-->
+<!--			<p class="popup-info__text app__text"></p>-->
+			<button type="button" class="popup__close"></button>
+<!--		</div>-->
+
+	</div>
+<!--</div>-->
 
 
 <!--<div class="modal">-->
