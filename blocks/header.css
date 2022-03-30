@@ -13,6 +13,10 @@
     grid-template:repeat(3, auto) /1fr minmax(auto, 1240px) 1fr;
 }
 
+.burger__img {
+    display: none;
+}
+
 .test {
     margin: 0;
     padding: 0;
@@ -128,6 +132,7 @@
 }
 
 .header__order {
+    display: block;
     margin: 0;
     padding: 0 10px 0 0;
     grid-column: 3/4;
@@ -174,6 +179,21 @@
 
 @media screen and (max-width: 800px){
     .header__nav {
+        display: none;
+    }
+
+    .burger__img {
+        display: block;
+        margin: 0;
+        width: 30px;
+        padding: 0 10px 0 0;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    .header__order {
         display: none;
     }
 

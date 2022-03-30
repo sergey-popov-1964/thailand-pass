@@ -141,7 +141,7 @@ popupMenu.setEventListeners();
 // popupMenu.setEventListeners();
 
 
-document.querySelector('.header__img').addEventListener('click', () => {
+document.querySelector('.burger__img').addEventListener('click', () => {
     popupMenu.open();
 });
 
