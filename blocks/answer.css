@@ -51,20 +51,6 @@
     border-bottom: none;
 }
 
-
-
-/*.element-answer__title {*/
-/*    grid-row: 1/2;*/
-/*    grid-column: 2/3;*/
-/*    line-height: 60px;*/
-/*}*/
-
-/*.element-answer__text {*/
-/*    padding: 10px 10px 10px 20px;*/
-/*    border: solid 1px #c0c0d5;*/
-/*    border-bottom: none;*/
-/*}*/
-
 .element-answer__text_hide {
     display: none;
 }
@@ -83,16 +69,15 @@
     }
 }
 
-
-@-webkit-keyframes element-answer__text_hide {
-    0% {
-        opacity: 1;
-    }
-       50% {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-}
+/*@-webkit-keyframes element-answer__text_hide {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*       50% {*/
+/*        opacity: 0;*/
+/*        transform: scale3d(.3, .3, .3);*/
+/*    }*/
+/*}*/
 
 
 @media screen and (max-width: 1280px){

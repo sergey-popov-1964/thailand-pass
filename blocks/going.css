@@ -47,7 +47,6 @@
     margin: 0;
     display: grid;
     grid-template: auto /repeat(4, 1fr);
-    /*grid-template: repeat(2, 1fr)/repeat(4, 1fr);*/
     gap: 50px;
 }
 
@@ -69,9 +68,6 @@
 }
 
 @media screen and (max-width: 1280px){
-    /*.card__img {*/
-    /*    height: calc(120px + (200 - 120) * ((100vw - 800px) / (1280 - 800)));*/
-    /*}*/
 
     .testgo-going__list {
         gap: calc(25px + (50 - 25) * ((100vw - 900px) / (1280 - 900)));
