@@ -129,10 +129,10 @@
     z-index: 200;
     position: fixed;
     top: 0;
-    right: -120%;
+    right: -100%;
     width: 50%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: rgb(218, 222, 222);
     padding: 30px;
     transition: right 1s ease 0s;
 
