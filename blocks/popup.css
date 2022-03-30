@@ -82,18 +82,22 @@
 
 .popup__close {
     position: absolute;
-    background: url('/image/close_icon.svg') no-repeat center;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 0;
+    /*background: url('/image/close_icon.svg') no-repeat center;*/
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
     top: 30px;
     right: 30px;
     border: none;
     outline: none;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
-    transform: rotate(45deg);
+    /*transform: rotate(45deg);*/
 }
 
 .popup__close:hover {
@@ -135,24 +139,15 @@
     background-color: rgb(218, 222, 222);
     padding: 30px;
     transition: right 1s ease 0s;
-
-
-    /*right: 0;*/
-    /*width: 50%;*/
-    /*height: 100%;*/
-    /*z-index: 100;*/
-    /*background-color: #FFFFFF;*/
-    /*transform: translateX(100%);*/
-    /*transition: visibility .5s, left 1s linear;*/
-
-
-
-    /*display: grid;*/
-    /*grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;*/
-    /*visibility: hidden;*/
-    /*opacity: 0;*/
-    /*animation: popup-menu_visible .5s linear both;*/
 }
+
+.burger__close {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    background-color: rgb(218, 222, 222);
+}
+
 
 .popup__burger-menu._active {
     /*visibility: visible;*/
