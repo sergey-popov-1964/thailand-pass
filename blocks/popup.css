@@ -88,8 +88,9 @@
     font-size: 26px;
     line-height: 32px;
     font-weight: 700;
-    top: 30px;
-    right: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 15px;
+    right: 15px;
     border: none;
     outline: none;
     color: #000000;
