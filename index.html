@@ -9,7 +9,7 @@
 
 <body class="page">
 
-<div class="burger">
+<div id="header" class="burger">
 	<div class="burger__wrapper">
 		<div class="header__contact">
 			<a class="header__phone" href="tel:+654545454">
@@ -335,17 +335,18 @@
 </footer>
 
 
-<div class="popup__overlay">
+<div class="popup__overlay-info">
 	<div class="form popup__form">
 		<div class="popup__content">
-		<h2 class="popup-info__name app__chapter"></h2>
-		<p class="popup-info__text app__text"></p>
-		<button type="button" class="popup__close">&#215;</button>
-	</div>
+			<h2 class="popup-info__name app__chapter"></h2>
+			<p class="popup-info__text app__text"></p>
+			<button type="button" class="popup__close">&#215;</button>
+		</div>
 	</div>
 </div>
 
 
+<div class="popup__overlay-burger">
 <div class="popup__burger-menu">
 	<div class="burger-menu__content">
 		<ul class="burger-menu__nav">
@@ -386,6 +387,8 @@
 	</div>
 	<button type="button" class="popup__close burger__close">&#215;</button>
 </div>
+</div>
+
 
 
 <template class="element-answer">

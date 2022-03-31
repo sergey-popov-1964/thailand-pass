@@ -123,16 +123,17 @@ class PopupMenu extends Popup {
 }
 
 //Константв для оверлея
-const elementPopupOverlaySelector = '.popup__overlay';
 
 //Создание инстанса для формы Инфо
+const elementPopupOverlayInfo = '.popup__overlay-info';
 const elementPopupFormSelector = '.popup__form';
-const popupInfo = new PopupInfo(elementPopupOverlaySelector, elementPopupFormSelector, 'popup__overlay_active', 'popup__form_active' );
+const popupInfo = new PopupInfo(elementPopupOverlayInfo, elementPopupFormSelector, 'popup__overlay_active', 'popup__form_active' );
 popupInfo.setEventListeners();
 
 //Создание инстанса для формы Бургер меню
+const elementPopupOverlayBurger = '.popup__overlay-burger';
 const elementPopupMenuSelector = '.popup__burger-menu';
-const popupMenu = new PopupMenu(elementPopupOverlaySelector, elementPopupMenuSelector, 'popup__overlay_active', '_active' );
+const popupMenu = new PopupMenu(elementPopupOverlayBurger, elementPopupMenuSelector, 'popup__overlay_active', '_active' );
 popupMenu.setEventListeners();
 
 //Слушатель на иконке меню бургера
