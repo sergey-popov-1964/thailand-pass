@@ -141,14 +141,51 @@ document.querySelector('.burger__img').addEventListener('click', () => {
 });
 
 //Создание слушателей для пунктов бургер меню
-const menuLinks = document.querySelectorAll('.menu__link');
-menuLinks.forEach((item) => {
-    item.addEventListener('click', (e) => {
-        popupMenu.close();
-    })
-});
+const burgerMenuLinks = document.querySelectorAll('.burger__link[data-goto]');
+if (burgerMenuLinks.length > 0) {
+    burgerMenuLinks.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            const menuLinkData = e.target;
+            if (menuLinkData.dataset.goto && document.querySelector(menuLinkData.dataset.goto)) {
+                const gotoBlock = document.querySelector(menuLinkData.dataset.goto);
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.burger__wrapper').offsetHeight
 
-//Слушатель на кнопке Order в бургер меню
-document.querySelector('.burger__button').addEventListener('click', () => {
-    popupMenu.close();
-});
+                window.scrollTo( {
+                    top: gotoBlockValue,
+                    behavior: "smooth"
+                })
+                e.preventDefault();
+                popupMenu.close();
+            } else {
+                 popupMenu.close();
+            }
+
+        })
+    });
+}
+
+//Создание слушателей для пунктов Header меню
+const headerMenuLinks = document.querySelectorAll('.header__link-goto[data-goto]');
+if (headerMenuLinks.length > 0) {
+    headerMenuLinks.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            const menuLinkData = e.target;
+            if (menuLinkData.dataset.goto && document.querySelector(menuLinkData.dataset.goto)) {
+                const gotoBlock = document.querySelector(menuLinkData.dataset.goto);
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.burger__wrapper').offsetHeight
+
+                window.scrollTo( {
+                    top: gotoBlockValue,
+                    behavior: "smooth"
+                })
+                e.preventDefault();
+            }
+        })
+    });
+}
+
+
+// //Слушатель на кнопке Order в бургер меню
+// document.querySelector('.burger__button').addEventListener('click', () => {
+//     popupMenu.close();
+// });
