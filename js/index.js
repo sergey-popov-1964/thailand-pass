@@ -201,11 +201,11 @@ if (headerMenuLinks.length > 0) {
 
 
 
-window.addEventListener('resize', () => {
-
-    console.log(123456)
-    location.reload();
-});
+// window.addEventListener('resize', () => {
+//
+//     console.log(123456)
+//     location.reload();
+// });
 
 // //Слушатель на кнопке Order в бургер меню
 // document.querySelector('.burger__button').addEventListener('click', () => {
