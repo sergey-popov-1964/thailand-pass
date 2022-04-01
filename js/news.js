@@ -1,3 +1,21 @@
+let firstSlideNews = 0; //Номер первой новости
+let lastSlideNews = 2; //Номер последней новости
+let stepSlideNews = 3; //Шаг показа новостей
+
+const windowInnerWidth = document.documentElement.clientWidth
+if (windowInnerWidth > 500) {
+    firstSlideNews = 0; //Номер первой новости
+    lastSlideNews = 1; //Номер последней новости
+    stepSlideNews = 2; //Шаг показа новостей
+} else {
+    firstSlideNews = 0; //Номер первой новости
+    lastSlideNews = 0; //Номер последней новости
+    stepSlideNews = 1; //Шаг показа новостей
+}
+
+
+
+
 //Новая новость
 class News {
     constructor(newSelector, data) {
@@ -50,10 +68,6 @@ function createCard(newNews) {
     const card = new News(elementNewsSelector, newNews);
     return card.generateCard();
 }
-
-let firstSlideNews = 0; //Номер первой новости
-let lastSlideNews = 2; //НОмер последней новости
-let stepSlideNews = 3; //Шаг показа новостей
 
 const itemsSlider = document.querySelectorAll('.news__item') //Селктор слайдера
 const allSlideNews = itemsSlider.length - 1; //Общее количество новостей к показу

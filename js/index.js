@@ -1,3 +1,17 @@
+//Основные конфигурационные установки
+document.querySelector('.config__sendMessageEmail').value = config.sendMessageEmail // email куда будут отправляться сообщения
+document.querySelector('.config__titleMessageEmail').value = config.titleMessageEmail // Тема сообщения
+document.querySelector('.header__phone').innerText = config.menuPhone // Номер телефона, котрый будет отображаться в Хедере
+document.querySelector('.header__phone').href = "tel:" + config.callPhone // Номер телефона, котрый будет вызываться при клике на ссылку с номером телефона в Хедере
+document.querySelector('.header__email').innerText = config.emailCompany // Email, котрый будет отображаться в Хедере
+document.querySelector('.header__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылу Email в Хедере
+
+
+
+// const windowInnerWidth = document.documentElement.clientWidth
+// console.log(windowInnerWidth)
+
+
 //Класс для добавления нового DOM элемента
 class Section {
     constructor(itemSelector) {
@@ -149,7 +163,7 @@ if (burgerMenuLinks.length > 0) {
             const menuLinkData = e.target;
             if (menuLinkData.dataset.goto && document.querySelector(menuLinkData.dataset.goto)) {
                 const gotoBlock = document.querySelector(menuLinkData.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.burger__wrapper').offsetHeight
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header__wrapper').offsetHeight
 
                 window.scrollTo( {
                     top: gotoBlockValue,
@@ -173,7 +187,7 @@ if (headerMenuLinks.length > 0) {
             const menuLinkData = e.target;
             if (menuLinkData.dataset.goto && document.querySelector(menuLinkData.dataset.goto)) {
                 const gotoBlock = document.querySelector(menuLinkData.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.burger__wrapper').offsetHeight
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header__wrapper').offsetHeight
 
                 window.scrollTo( {
                     top: gotoBlockValue,

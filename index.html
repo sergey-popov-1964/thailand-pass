@@ -10,8 +10,8 @@
 <body class="page">
 
 <div id="header" class="burger">
-	<div class="burger__wrapper">
-		<div class="header__contact">
+	<div class="header__wrapper">
+		<div class="header__contact header__contact_menu">
 			<a class="header__phone" href="tel:+654545454">
 				+7 (845) 568-87-87
 			</a>
@@ -19,9 +19,25 @@
 				mycompany@me.com
 			</a>
 		</div>
+
 		<div class="header__menu">
-			<div class="header__logo">
-				<img class="header__img" src="image/logo-nav.png" alt="Logo">
+<!--			<div class="header__logo">-->
+				<a class="header__logo" href="#">
+					<img class="header__img" src="image/logo-nav.png" alt="Logo">
+				</a>
+
+<!--				<img class="header__img" src="image/logo-nav.png" alt="Logo">-->
+
+
+<!--			</div>-->
+
+			<div class="header__contact header__contact_logo">
+				<a class="header__phone" href="tel:+654545454">
+					+7 (845) 568-87-87
+				</a>
+				<a class="header__email" href="mailto:mycompany@me.com">
+					mycompany@me.com
+				</a>
 			</div>
 
 			<ul class="header__nav">
@@ -62,7 +78,7 @@
 
 			<div class="header__order">
 				<a href="#" class="header__link app__link">
-					<button data-goto=".page__order" class="app__button header__button order__button header__link-goto">Order</button>
+					<button data-goto=".page__order" class="app__button header__button order__button header__link-goto">Order ThaiPass</button>
 				</a>
 			</div>
 		</div>
@@ -70,13 +86,13 @@
 
 </div>
 
-
 <main class="main">
+
 	<section class="offer app__section">
 		<h1 class="offer__title">Title</h1>
 		<p class="offer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda cum earum illum ipsa molestiae nemo quo voluptas voluptatibus. A architecto culpa delectus distinctio ipsa, mollitia unde ut velit.</p>
 		<a href="#" class="header__link app__link">
-			<button data-goto=".page__order" class="app__button offer__button order__button header__link-goto">Order</button>
+			<button data-goto=".page__order" class="app__button offer__button order__button header__link-goto">Order ThaiPass</button>
 		</a>
 	</section>
 
@@ -232,8 +248,10 @@
 		<form action="mail.php" enctype="multipart/form-data" class="form form_send-message" method="POST">
 			<p class="app__text form__text">We are ready to give any answers on the Sandbox and Test & Go programs, to issue documents and a They Pass entry permit, as well as to provide assistance in case of difficulties with self-registration of a Tie Pass permit. In the message, you can send scans of documents.
 				We respond within 30 minutes.</p>
-			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">
-			<input type="hidden" name="form_subject" value="Тема письма">
+			<input type="hidden" name="admin_email[]" value="" class="config__sendMessageEmail">
+
+			<!--			<input type="hidden" name="admin_email[]" value="sergeykms-test@yandex.ru">-->
+			<input type="hidden" name="form_subject" value="" class="config__titleMessageEmail">
 			<ul class="form__list">
 				<li class="form__item">
 					<label class="form__label">
@@ -445,7 +463,8 @@
 </template>
 
 
-<script src="js/data.js"></script>
+<script src="data/data.js"></script>
+<script src="data/config.js"></script>
 <script src="js/index.js"></script>
 <script src="js/news.js"></script>
 <script src="vendor/inputmask.min.js"></script>
