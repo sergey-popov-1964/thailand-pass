@@ -1,9 +1,13 @@
 let firstSlideNews = 0; //Номер первой новости
-let lastSlideNews = 2; //Номер последней новости
-let stepSlideNews = 3; //Шаг показа новостей
+let lastSlideNews = 0; //Номер последней новости
+let stepSlideNews = 0; //Шаг показа новостей
 
 const windowInnerWidth = document.documentElement.clientWidth
-if (windowInnerWidth > 500) {
+if (windowInnerWidth > 800) {
+    firstSlideNews = 0; //Номер первой новости
+    lastSlideNews = 2; //Номер последней новости
+    stepSlideNews = 3; //Шаг показа новостей
+} else if (windowInnerWidth > 500) {
     firstSlideNews = 0; //Номер первой новости
     lastSlideNews = 1; //Номер последней новости
     stepSlideNews = 2; //Шаг показа новостей
