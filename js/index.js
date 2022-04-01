@@ -207,6 +207,7 @@ if (headerMenuLinks.length > 0) {
 //     location.reload();
 // });
 
+
 // //Слушатель на кнопке Order в бургер меню
 // document.querySelector('.burger__button').addEventListener('click', () => {
 //     popupMenu.close();
