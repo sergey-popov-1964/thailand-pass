@@ -21,15 +21,9 @@
 		</div>
 
 		<div class="header__menu">
-<!--			<div class="header__logo">-->
 				<a class="header__logo" href="#">
 					<img class="header__img" src="image/logo-nav.png" alt="Logo">
 				</a>
-
-<!--				<img class="header__img" src="image/logo-nav.png" alt="Logo">-->
-
-
-<!--			</div>-->
 
 			<div class="header__contact header__contact_logo">
 				<a class="header__phone" href="tel:+654545454">
@@ -399,9 +393,19 @@
 				</a>
 			</li>
 		</ul>
-		<a href="#" class="header__link app__link burger__link">
-			<button data-goto=".page__order" class="app__button header__button order__button burger__button burger__link">Order ThaiPass</button>
+		<a href="#" class="header__link app__link burger__button">
+			<button data-goto=".page__order" class="app__button header__button order__button  burger__link">Order ThaiPass</button>
 		</a>
+
+		<div class="burger__contact burger__contact_menu">
+			<a class="app__link header__link burger__phone" href="tel:+654545454">
+				+7 (845) 568-87-87
+			</a>
+			<a class="app__link header__link burger__email" href="mailto:mycompany@me.com">
+				mycompany@me.com
+			</a>
+		</div>
+
 	</div>
 	<button type="button" class="popup__close burger__close">&#215;</button>
 </div>
@@ -433,12 +437,14 @@
 
 <template class="going">
 	<li class="going__list app__list">
-		<img src="" alt="" class="going__img">
-		<div class="going__content">
-			<h4 class="going__title"></h4>
-			<p class="going__text"></p>
+		<div class="going__list-click">
+			<img src="" alt="" class="going__img">
+			<div class="going__content">
+				<h4 class="going__title"></h4>
+				<p class="going__text"></p>
+			</div>
+			<button class="app__button app__button_transparent going__pos going-button__hide">READ MORE</button>
 		</div>
-		<button class="app__button app__button_transparent going__pos going-button__hide">READ MORE</button>
 	</li>
 </template>
 

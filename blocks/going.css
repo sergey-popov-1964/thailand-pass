@@ -58,6 +58,9 @@
     grid-template: max-content 1fr max-content / 1fr;
 }
 
+.going__list-click {
+    cursor: pointer;
+}
 .going__content {
     margin: 0;
     padding: 10px 0 0 0;

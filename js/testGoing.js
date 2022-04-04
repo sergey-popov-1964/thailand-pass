@@ -17,7 +17,11 @@ class Going {
     }
 
     _setEventListeners() {
-        this._elementButton.addEventListener('click', () => {
+        // this._elementButton.addEventListener('click', () => {
+        //     popupInfo.open(this._title, this._description);
+        // });
+
+        this._elementGoingList.addEventListener('click', () => {
             popupInfo.open(this._title, this._description);
         });
     }
@@ -25,7 +29,7 @@ class Going {
     generateCard() {
         this._element = this._getTemplate();
 
-        this._elementButton = this._element.querySelector('.app__button')
+        this._elementGoingList = this._element.querySelector('.going__list-click')
 
         this._element.querySelector('.going__img').src = this._img;
         this._element.querySelector('.going__title').textContent = this._title;

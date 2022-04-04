@@ -1,3 +1,6 @@
+
+
+
 .main {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -23,6 +26,9 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.page__lock {
+    overflow: hidden;
+}
 
 .app__button {
     margin: 0;

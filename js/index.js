@@ -8,7 +8,8 @@ document.querySelector('.header__email').href = "mailto:" + config.emailCompany 
 
 
 
-// const windowInnerWidth = document.documentElement.clientWidth
+
+const windowInnerWidth = document.documentElement.clientWidth
 // console.log(windowInnerWidth)
 
 
@@ -69,6 +70,7 @@ class Card {
 class Popup {
     constructor(popupOverlaySelector, popupFormSelector, handlerOverlayActive, handlerFormActive) {
         this._popupOverlaySelector = document.querySelector(popupOverlaySelector);
+        this._elementPage = document.querySelector('.page');
         this._popupFormSelector = document.querySelector(popupFormSelector);
         this._popupCloseButton = document.querySelector(popupFormSelector).querySelector('.popup__close');
         this._handleEscClose = this._handleEscClose.bind(this);
@@ -88,6 +90,7 @@ class Popup {
         this._popupOverlaySelector.classList.add(this._handlerOverlayActive);
         this._popupFormSelector.classList.add(this._handlerFormActive);
         document.addEventListener('keydown', this._handleEscClose);
+        this._elementPage.classList.add('page__lock')
     };
 
     // Функция закрытия формы и оверлея
@@ -95,6 +98,7 @@ class Popup {
         this._popupOverlaySelector.classList.remove(this._handlerOverlayActive);
         this._popupFormSelector.classList.remove(this._handlerFormActive);
         document.removeEventListener('keydown', this._handleEscClose);
+        this._elementPage.classList.remove('page__lock')
     };
 
     setEventListeners() {
@@ -199,13 +203,15 @@ if (headerMenuLinks.length > 0) {
     });
 }
 
+let saveWidth = windowInnerWidth
 
 
-// window.addEventListener('resize', () => {
-//
-//     console.log(123456)
-//     location.reload();
-// });
+window.addEventListener('resize', () => {
+    if (saveWidth !== document.documentElement.clientWidth) {
+        alert('ширина изменилась')
+    }
+
+});
 
 
 // //Слушатель на кнопке Order в бургер меню

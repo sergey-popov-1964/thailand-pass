@@ -4,26 +4,110 @@
 
 const qa = [
     {
-        question: "What is Thaipass?",
-        answer: "Thailand Pass is a web-based system for Thai, and foreign travellers to fill in their travel, and health information. Upon approval you receive a QR code which will allow you to travel to Thailand (you will still need to meet visa requirements)."
+        question: "Are there any check-in restrictions when exiting Thailand?",
+        answer: "Unless stated otherwise by your airline, the only requirement to exit Thailand is to present your vaccination certificate or an ATK test result before boarding the flight. It is recommended to check with your airline to know the current entry requirements of your country of destination."
     },
     {
-        question: "Who needs Thaipass?",
-        answer: "Thailand Pass is required for Thai and foreigners to enter Thailand including those nationalities under the Visa Exemption and Visa on Arrival list. The Test and Go Hotel, AQ Hotel, SHA+ Hotel reservation, and COVID-19 Insurance with a minimum coverage of $20,000 are still required for foreigners entering Thailand."
+        question: "Unless stated otherwise by your airline, the only requirement to exit Thailand is to present your vaccination certificate or an ATK test result before boarding the flight. It is recommended to check with your airline to know the current entry requirements of your country of destination.",
+        answer: "If your return flight from Cambodia is a direct transit (you do not pass through Passport Control), then you do not need to apply for a new Thailand Pass. You only need insurance and the pre-boarding COVID test.\n" +
+            "\n" +
+            "If you must exit through Passport Control to board your new flight, you will need to apply for a new Thailand Pass and do a new Test & Go.\n" +
+            "\n"
     },
     {
-        question: "What is Phuket sandbox?",
-        answer: "Phuket Sandbox is a program that allows foreign travelers to visit Phuket province without having to undergo quarantine. They must have a negative RT-PCR test result before they can enjoy traveling and do leisure activities throughout Phuket."
+        question: "I am trying to use the MorChana App in my home country, but it is not working. What is the issue?\n",
+        answer: "The MorChana application will only activate once you are in Thailand. You can download it before then, but it will not register any details or your Thai Pass QR code. You may ask your SHA+ hotel staff to assist you on how to navigate the app.\n" +
+            "\n"
     },
     {
-        question: "How long is Thaipass valid?",
-        answer: "Even with the visa exemption scheme, travelers still need to apply for a Thailand Pass (click here to register) in order to enter Thailand. This Visa is for tourism purposes only. This Visa is valid for 3 months from the date of issuance."
+        question: "Can I land directly in Phuket, stay for 3 – 4 days, and then leave again?\n",
+        answer: "Yes. If you land directly at Phuket International Airport under Test & Go you will do 1-night mandatory quarantine and then are free to travel for the rest of your stay. Since you are staying less than 5 days, you are not required to undergo an ATK test. However, you need to check the entry requirements of your next country of destination.\n" +
+            "\n"
     },
     {
-        question: "How much does the Thaipass cost?",
-        answer: "You won't need to pay anything for your Thailand Pass as it is a free-of-charge web-based system designed to optimize the documentation processes of travelers entering Thailand. After you complete the application, your pass will be processed, and you'll receive a QR code within 7 days (more about this later)."
+        question: "Do I need to print all my documents and Thailand Pass QR code for when I arrive in Thailand?\n",
+        answer: "Yes. It is the best practice as you will present these documents to Immigration and Health Officers at the airport Passport and Health Control.\n" +
+            "\n"
     },
-]
+    {
+        question: "Why are the SHA+/AQ hotel packages more expensive than a normal hotel?\n",
+        answer: "SHA+/AQ hotels include the cost of transport from the airport, RT-PCR testing, and transport to the hospital/isolation facility for cases where people test positive for Covid.\n" +
+            "\n"
+    },
+    {
+        question: "What documents do I need for a Thai Pass Test and Go application?\n",
+        answer: "1. Passport Copy – Scanned copy of passport profile page.\n" +
+            "2. Insurance Policy – Minimum cover of $20,000 USD. The insurance policy must be valid for the entire length of stay in Thailand.\n" +
+            "3. Vaccination certificate – Your vaccination certificate must be of an approved vaccine variety and you must have been vaccinated over 14 days prior to departure.\n" +
+            "(Not required for children below 18 years old who are escorted by parents).\n" +
+            "\n" +
+            "4. Hotel reservation – SHA Extra+ / AQ for 1 day (Day 1) (1 RT-PCR test fee 1 ATK self-test kit and airport transfer included).\n" +
+            "5. Flight detailsPassport Copy – Scanned copy of passport profile page.\n" +
+            "6. Hotel reservation – SHA Extra+ / AQ for 1 day (Day 1) (1 RT-PCR test fee 1 ATK self-test kit and airport transfer included).\n"
+    },
+    {
+        question: "If you land at Bangkok Suvarnabhumi from an international flight, can you transfer to a domestic flight without leaving the airport and do your test and go to your final destination? Or do you have to do one at Bangkok accredited Hotel first?\n",
+        answer: "Unless the flight is listed as a ‘sealed flight’, you cannot transit domestically. You must complete your Test & Go in Bangkok before traveling to your final destination. Please check with Thai Airways and Bangkok Airways for the new list of sealed flights to Phuket and Samui.\n" +
+            "\n"
+    },
+    {
+        question: "What does the term transit mean regarding Thailand Pass?\n",
+        answer: "To transit in Thailand without needing a Thailand Pass, you must not pass through Passport Control but move directly from one flight to the next.\n" +
+            "\n" +
+            "If you pass through Passport Control for ANY reason (to collect bags or check in on a new flight), you are required to have a Thailand Pass and follow Test & Go/ Alternate Quarantine procedures."
+    },
+    {
+        question: "With Test & Go, you may travel around everywhere in Thailand after a negative test result. But with SANDBOX you have to stay in your hotel for 5 days. Why is that?\n",
+        answer: "The Sandbox scheme was implemented before Test & Go was available in Phuket. If you are vaccinated and meet the requirements for Test & Go, there is no need to enter Thailand under the Sandbox scheme. The Test and Go program is a better option for those who are fully vaccinated.\n" +
+            "\n"
+    },
+    {
+        question: "For the vaccination certification – can we use a screenshot of the official Corona App from Germany which shows all the vaccinations or do we need an official printout of the vaccination certificates?\n",
+        answer: "It is best practice to print a hard copy of all documents needed when applying for a Thailand Pass. You will present these documents to Passport Control on arrival. You can take a screenshot if all applicable details show, but it is better to present the screen or print the official certificate. \n" +
+            "\n" +
+            "For the Thailand Pass application, yes a high-resolution screenshot will be accepted."
+    },
+    {
+        question: "Can a tourist apply for Thailand Pass with only a fly-in ticket (1 way) without a fly-out ticket booked?\n",
+        answer: "Yes. With Thailand Pass, you only need to provide details of your entry flight."
+    },
+    {
+        question: "How do I extend my stay in Thailand if I have a Tourist Visa or visa exemption?\n",
+        answer: "If you enter Thailand under visa exemption you can stay for 30 days.\n" +
+            "\n" +
+            "A Tourist Visa allows you to stay in Thailand for 60 days.\n" +
+            "\n" +
+            "Before the expiry date of your permit to stay, you can visit the local Thai Immigration Office and apply for a 30-day extension. The cost is 1900 Thai baht."
+    },
+    {
+        question: "I have a family of 4. One child is under 6. Do I need to submit a separate Thai Pass application for each family member?",
+        answer: "No. All travelers aged 18 years old or above must apply for Thailand Pass individually.\n" +
+            "\n" +
+            "Children under the age of 18 do not need to register for the Thailand Pass on their own. Parents will add their children’s information to their Thailand Pass registration under the “Personal Information” section."
+    },
+    {
+        question: "What do you do if you test positive at the hotel? Do you stay at the hotel to quarantine or do they move you and how long of a quarantine?",
+        answer: "If you test positive with no history of COVID 19 infection, you will be sent to a hotel or hospital quarantine for up to 10 days. \n" +
+            "\n" +
+            "If you test positive with a history of COVID infection, you will be sent to isolation in a hotel or hospital. Officials will review your infection history (medical certificate of recovery) It will depend on the case. The assessment will include your CT level, whether you are asymptomatic and how long ago you had COVID."
+    },
+    {
+        question: "What are the rules for traveling to Thailand from the UK if unvaccinated?",
+        answer: "IF you are not vaccinated, you must enter Thailand under the Alternative Quarantine scheme. You are required to quarantine in your room at an approved SHA+ hotel and cannot leave the room for 5 nights. You will do an RT-PCR test on Day 1 and Day 5."
+    },
+    {
+        question: "I’m traveling on the 6th of April from Australia. I just got a message from Qantas saying I require a PCR within 72 hours. Is RT-PCR still required?\n",
+        answer: "Because the April 1 changes have not come into effect yet, many airlines are still auto-generating correspondence. Check your airline after April 1."
+    },
+    {
+        question: "My Thai Pass has been approved. What do I do now?",
+        answer: "Once your Thailand Pass is approved, you will receive an email with your Thailand Pass QR code, ID number, and further details.\n" +
+            "\n" +
+            "Compile your travel documents to be presented on arrival. It is recommended that you print 2 copies of all documents in case a document is kept by an airport officer.\n" +
+            "\n" +
+            "Print a copy of your QR code for arrival in case there is an issue with your phone when arriving."
+    },
+   ]
 
 
 // Здесь заносятся данные? которые будут отображаться в блоке What you need for Thailand Pass
@@ -96,7 +180,7 @@ const testGoDate = [
         img: "image/pcr_test.jpeg",
         title: "PCR test",
         text: "A PCR test with a negative result, issued no more than 72 hours ago at the time of departure to Thailand",
-        description: "A PCR test with a negative result, issued no more than 72 hours ago at the time of departure to Thailand"
+        description: "When tourists first arrive at the airport or their hotel or designated venue, they have to undergo the first RT-PCR test and wait for the result in their hotel room. Children and adults must be tested for COVID-19 upon arrival. &para;If the test is negative, you will be able to travel all over Thailand. You will also be able to take the second test on the fifth day of your trip. The second test will be an antigen rapid test. &para;However, if you test positive for COVID-19, officials will refer you for the necessary medical treatment. The tourists will be responsible for the medical expenses. In some cases, insurance policies might not pay for your isolation expenses."
     },
     {
         img: "image/vaccine.jpeg",
@@ -147,7 +231,7 @@ const testGoingDate = [
         img: "image/going/pcr-test.jpeg",
         title: "4. PCR test in Thailand",
         text: "The medical control staff will conduct a PCR test, paid for during the registration of the Thai Pass",
-        description: ""
+        description: "When tourists first arrive at the airport or their hotel or designated venue, they have to undergo the first RT-PCR test and wait for the result in their hotel room. Children and adults must be tested for COVID-19 upon arrival. If the test is negative, you will be able to travel all over Thailand. You will also be able to take the second test on the fifth day of your trip. The second test will be an antigen rapid test.However, if you test positive for COVID-19, officials will refer you for the necessary medical treatment. The tourists will be responsible for the medical expenses. In some cases, insurance policies might not pay for your isolation expenses. "
     },
     {
         img: "image/going/transfer.jpeg",
@@ -170,14 +254,13 @@ const testGoingDate = [
     {
         img: "image/going/travel.jpeg",
         title: "8. Second - fourth days Test & Go",
-        text: "From the second to the fourth days, you can relax and travel throughout Thailand without restrictions",
-        description: ""
+        text: ""
     },
     {
         img: "image/going/rapid.jpeg",
         title: "9. Rapid coronavirus test",
         text: "On the fifth day of rest in Thailand, an independent rapid test for coronavirus is conducted. The test is conducted at the hotel. The results are ready in 10-30 minutes.",
-        description: ""
+        description: "On the fifth day of your trip, tourists will need to go through the second COVID test which is an ATK test. Just like the first test, if you test negative for COVID-19, you will be allowed to travel anywhere in the country. If you test positive, you need to do a confirmatory RT PCR test to make sure you have been infected with COVID and receive the necessary medical treatment."
     },
     {
         img: "image/going/end.jpeg",
