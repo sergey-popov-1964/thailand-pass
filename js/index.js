@@ -208,8 +208,8 @@ let saveWidth = windowScreenWidth
 
 
 window.addEventListener('resize', () => {
-    if (saveWidth !== document.documentElement.clientWidth) {
-        alert('ширина изменилась')
+    if (saveWidth !== document.documentElement.screen.width) {
+        alert('ширина' + document.documentElement.screen.width)
         saveWidth = document.documentElement.screen.width
     }
 
