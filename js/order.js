@@ -27,13 +27,18 @@ let validateForms = function(selector, rules) {
 		rules: rules,
 		submitHandler: function(form) {
 			let formData = new FormData(form);
-
+			document.querySelector('.page').classList.add('page__lock')
+			document.querySelector('.form__button').innerText = 'Sending'
+			document.querySelector('.popup__overlay-order').classList.add('popup__overlay-order_active')
 			return fetch(`mail.php`, {
 				method: 'POST',
 				body: formData,
 			})
 				.then(res => {
 					if (res.ok) {
+						document.querySelector('.page').classList.remove('page__lock')
+						document.querySelector('.form__button').innerText = 'Send'
+						document.querySelector('.popup__overlay-order').classList.remove('popup__overlay-order_active')
 						form.reset();
 						const attachFile = document.querySelectorAll('.attach__list')
 

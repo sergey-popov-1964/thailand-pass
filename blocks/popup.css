@@ -49,7 +49,20 @@
     grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;
 }
 
-.popup__overlay_active {
+.popup__overlay-order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+
+.popup__overlay-order_active {
     visibility: visible;
     opacity: 1;
 }

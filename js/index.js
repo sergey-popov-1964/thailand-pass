@@ -4,13 +4,7 @@ document.querySelector('.config__titleMessageEmail').value = config.titleMessage
 document.querySelector('.header__phone').innerText = config.menuPhone // Номер телефона, котрый будет отображаться в Хедере
 document.querySelector('.header__phone').href = "tel:" + config.callPhone // Номер телефона, котрый будет вызываться при клике на ссылку с номером телефона в Хедере
 document.querySelector('.header__email').innerText = config.emailCompany // Email, котрый будет отображаться в Хедере
-document.querySelector('.header__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылу Email в Хедере
-
-
-
-
-// const windowScreenWidth = document.documentElement.screen.width
-// console.log(windowInnerWidth)
+document.querySelector('.header__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылку Email в Хедере
 
 
 //Класс для добавления нового DOM элемента
@@ -203,22 +197,9 @@ if (headerMenuLinks.length > 0) {
     });
 }
 
-// let windowScreenWidth = window.screen.width
-// let saveWidth = windowScreenWidth
-// alert('ширина' + window.screen.width)
-//
+
+//Слушатель изменения ориентации телефона/планшета
+//При изменении - обновление
 window.addEventListener('orientationchange', () => {
-    // alert('1111111')
-    // if (saveWidth !== window.screen.width) {
-        // alert('ширина' + window.screen.width)
-        // saveWidth = window.screen.width
         document.location.reload()
-    // }
-
 });
-
-
-// //Слушатель на кнопке Order в бургер меню
-// document.querySelector('.burger__button').addEventListener('click', () => {
-//     popupMenu.close();
-// });
