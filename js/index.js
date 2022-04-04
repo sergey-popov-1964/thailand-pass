@@ -211,6 +211,7 @@ window.addEventListener('resize', () => {
     if (saveWidth !== document.documentElement.screen.width) {
         alert('ширина' + document.documentElement.screen.width)
         saveWidth = document.documentElement.screen.width
+        document.location.reload()
     }
 
 });
