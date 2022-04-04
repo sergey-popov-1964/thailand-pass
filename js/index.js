@@ -9,7 +9,7 @@ document.querySelector('.header__email').href = "mailto:" + config.emailCompany 
 
 
 
-const windowInnerWidth = document.documentElement.screen.width
+// const windowScreenWidth = document.documentElement.screen.width
 // console.log(windowInnerWidth)
 
 
@@ -203,12 +203,14 @@ if (headerMenuLinks.length > 0) {
     });
 }
 
-let saveWidth = windowInnerWidth
+let windowScreenWidth = document.documentElement.screen.width
+let saveWidth = windowScreenWidth
 
 
 window.addEventListener('resize', () => {
     if (saveWidth !== document.documentElement.clientWidth) {
         alert('ширина изменилась')
+        saveWidth = document.documentElement.screen.width
     }
 
 });
