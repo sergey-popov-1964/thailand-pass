@@ -9,7 +9,7 @@ document.querySelector('.header__email').href = "mailto:" + config.emailCompany 
 
 
 
-const windowInnerWidth = document.documentElement.clientWidth
+const windowInnerWidth = document.documentElement.screen.width
 // console.log(windowInnerWidth)
 
 
