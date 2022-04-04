@@ -203,16 +203,17 @@ if (headerMenuLinks.length > 0) {
     });
 }
 
-let windowScreenWidth = window.screen.width
-let saveWidth = windowScreenWidth
+// let windowScreenWidth = window.screen.width
+// let saveWidth = windowScreenWidth
 // alert('ширина' + window.screen.width)
 //
-window.addEventListener('resize', () => {
-    if (saveWidth !== window.screen.width) {
-        alert('ширина' + window.screen.width)
-        // saveWidth = document.documentElement.screen.width
-        // document.location.reload()
-    }
+window.addEventListener('orientationchange', () => {
+    // alert('1111111')
+    // if (saveWidth !== window.screen.width) {
+        // alert('ширина' + window.screen.width)
+        // saveWidth = window.screen.width
+        document.location.reload()
+    // }
 
 });
 
