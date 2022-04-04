@@ -44,6 +44,11 @@
     transition: visibility 1s, opacity 0.5s linear;
 }
 
+.popup__overlay_active {
+    visibility: visible;
+    opacity: 1;
+}
+
 .popup__info {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr max-content 1fr;
@@ -142,10 +147,10 @@
     background-color: rgb(218, 222, 222);
     transition: right 1s ease 0s;
     margin: 0;
-    padding: 40px 0 0 0;
+    padding: 40px 0 0 40px;
     /*display: grid;*/
     /*grid-template: max-content / 1fr max-content 1fr;*/
-    overflow: auto;
+    overflow: scroll;
 }
 
 .burger-menu__content {
@@ -154,12 +159,13 @@
     display: grid;
     grid-template: auto / 1fr max-content 1fr;
     gap: 30px;
+    /*overflow: scroll;*/
 }
 
 .burger__contact {
     margin: 0;
     /*padding: 10px 10px 0 0;*/
-    display: grid;
+    display: none;
     grid-template: max-content / 1fr;
     grid-row: 3/4;
     grid-column: 2/3;
@@ -258,6 +264,14 @@
 
     .popup__form {
         width: 90vw;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .burger__contact {
+        display: grid;
     }
 
 }
