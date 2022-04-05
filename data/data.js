@@ -118,44 +118,44 @@ const qa = [
 
 const thaipassDate = [
     {
-        img: "image/passport.jpeg",
+        img: "image/thaipass/passport.jpeg",
         title: "Passport",
         text: "A scan or a high-quality photo of only the first page of the passport with a photo.",
         description: "Make sure that the passport image (scan or photo) is clear, without glare and distortion. Poor image quality may cause failure. We check the entire package of documents before submitting and eliminate all the reasons on the basis of which a refusal may be given. Write to us and we will check your package of documents."
     },
     {
-        img: "image/certificate.jpeg",
+        img: "image/thaipass/certificate.jpeg",
         title: "Vaccination Certificate",
         text: "Electronic certificate of vaccination or a high-quality scan / photo. Fully vaccinated against COVID-19 no less than 14 days before travelling",
         description: "The certificate must be in English and contain information about the name of the vaccinated person, the name of the vaccine, the date of the first and second vaccination, as well as passport data. We issue a Tie Pass with various certificates. Write to us and get answers to all questions about vaccination."
     },
     {
-        img: "image/qrcode.jpeg",
+        img: "image/thaipass/qrcode.jpeg",
         title: "Vaccination QR code",
         text: "QR code from the vaccination certificate. No QR code? Not a problem. We issue a Tie Pass even without QR",
         description: "The QR code from your vaccination certificate should be entered into the Tie Pass system. The code must be clearly distinguishable. The code file must not contain text or images. Use a photo editor or other software to create a file with the code."
     },
     {
-        img: "image/booking.png",
+        img: "image/thaipass/booking.png",
         title: "Hotel booking",
         text: "SHA Extra+ standard hotel for the first day of your stay in Thailand",
         description: "According to the requirements of the Test & Go program, you must have a confirmation from the hotel about the paid room for the first and fifth days of your stay in Thailand (these may be different hotels in different provinces of Thailand). The hotel must meet the SHA Estra + standard. The hotel booking service that complies with the rules of the Test & Go program is included in the price of the Tie Pass."
     },
     {
-        img: "image/airticket.jpeg",
+        img: "image/thaipass/airticket.jpeg",
         title: "Air ticket",
         text: "A direct flight to the provincial airport of the Test & Go program is required.",
         description: "According to the requirements of the Test & Go program, you can arrive in Thailand only through the airports included in the program. If you are planning a vacation in a province far from the designated airports, make sure that the hotel where you stay immediately after arrival provides a SHA standard transfer from the airport. We will help you book a transfer."
     },
     {
-        img: "image/pay_pcr.jpeg",
+        img: "image/thaipass/pay_pcr.jpeg",
         title: "Reservation of PCR test",
         text: "Before making a Tie Pass, you should pay and book a PCR test.",
         description: "To register Topas, you should book and pay for PCR tests, which are carried out on the first and fifth days of your stay in Thailand. If you are entering Phuket, you should pay for the tests on the website www.thailandpsas.com\n" +
             "If you start a trip in Thailand in other provinces - PCR tests are paid through the hotel. The PCR test booking service is included in the price of a Tie Pass. Contact us and we will help you book and pay for PCR tests."
     },
     {
-        img: "image/insurance.jpeg",
+        img: "image/thaipass/insurance.jpeg",
         title: "Insurance from Covid-19",
         text: "Insurance with minimum coverage of 20,000 USD (not required for Thai nationals / foreign residents in Thailand can use social security or certificate from their employer).",
         description: "Medical insurance must meet the following requirements: (Coverage of medical expenses related to coronavirus infection; The minimum amount of medical expenses coverage is 50,000 US dollars; \n" +
@@ -171,37 +171,37 @@ const thaipassDate = [
 
 const testGoDate = [
     {
-        img: "image/thailand_pass.jpeg",
+        img: "image/testgo/thailand_pass.jpeg",
         title: "Thailand Pass",
         text: "Thai Pass is a document confirming the right to enter Thailand under the Test & Go program",
         description: "Thai Pass is a document confirming the right to enter Thailand under the Test & Go program"
     },
     {
-        img: "image/pcr_test.jpeg",
+        img: "image/testgo/pcr_test.jpeg",
         title: "PCR test",
-        text: "A PCR test with a negative result, issued no more than 72 hours ago at the time of departure to Thailand",
+        text: "A PCR test with a negative result, issued no     more than 72 hours ago at the time of departure to Thailand",
         description: "When tourists first arrive at the airport or their hotel or designated venue, they have to undergo the first RT-PCR test and wait for the result in their hotel room. Children and adults must be tested for COVID-19 upon arrival. &para;If the test is negative, you will be able to travel all over Thailand. You will also be able to take the second test on the fifth day of your trip. The second test will be an antigen rapid test. &para;However, if you test positive for COVID-19, officials will refer you for the necessary medical treatment. The tourists will be responsible for the medical expenses. In some cases, insurance policies might not pay for your isolation expenses."
     },
     {
-        img: "image/vaccine.jpeg",
+        img: "image/testgo/vaccine.jpeg",
         title: "Vaccination with an approved vaccine",
         text: "Travelers must be vaccinated against coronavirus at least 14 days before arrival in Thailand",
         description: "Travelers must be vaccinated against coronavirus at least 14 days before arrival in Thailand"
     },
     {
-        img: "image/insurance.jpeg",
+        img: "image/testgo/insurance.jpeg",
         title: "Medical insurance",
         text: "Medical insurance in the amount of at least 20,000 USD must cover the costs associated with COVID-19 coronavirus infection",
         description: "Medical insurance in the amount of at least 20,000 USD must cover the costs associated with COVID-19 coronavirus infection"
     },
     {
-        img: "image/sha.jpeg",
+        img: "image/testgo/sha.jpeg",
         title: "First day at the SPA Extra+ Hotel",
         text: "The Test program & Go requires waiting for the results of the PCR test on the day of arrival at the SHA Extra standard hotel+",
         description: "The Test program & Go requires waiting for the results of the PCR test on the day of arrival at the SHA Extra standard hotel+"
     },
     {
-        img: "image/pay_pcr.jpeg",
+        img: "image/testgo/pay_pcr.jpeg",
         title: "Payment for PCR test",
         text: "During the Test program & Go tourists take a PCR test. The test must be paid in full before arrival in Thailand",
         description: "During the Test program & Go tourists take a PCR test. The test must be paid in full before arrival in Thailand"

@@ -6,6 +6,10 @@ document.querySelector('.header__phone').href = "tel:" + config.callPhone // Н�
 document.querySelector('.header__email').innerText = config.emailCompany // Email, котрый будет отображаться в Хедере
 document.querySelector('.header__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылку Email в Хедере
 
+document.querySelector('.footer__phone').innerText = config.menuPhone // Номер телефона, котрый будет отображаться в Футере
+document.querySelector('.footer__phone').href = "tel:" + config.callPhone // Номер телефона, котрый будет вызываться при клике на ссылку с номером телефона в Футере
+document.querySelector('.footer__email').innerText = config.emailCompany // Email, котрый будет отображаться в Футере
+document.querySelector('.footer__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылку Email в Футере
 
 //Класс для добавления нового DOM элемента
 class Section {

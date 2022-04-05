@@ -1,33 +1,101 @@
 .footer {
     margin: 0;
-    padding: 0 20px;
+    padding: 20px;
     grid-row: 3/4;
     grid-column: 2/3;
-    background-color: #353536;
-    color: #2699cc;
+    background-color: #b8b8be;
     display: grid;
     column-gap: 50px;
     grid-auto-flow: column;
-    grid-template: auto / repeat(2, 1fr);
-    gap: 20px;
+    grid-template: auto / max-content 1fr;
     justify-content: center;
     align-self: center;
 }
 
-
-.footer__text {
+.footer__contact {
+    margin: 0;
     padding: 0;
-    font-size: calc(14px + (18 - 14) * ((100vw - 800px) / (1280 - 800)));
-    line-height: calc(18px + (26 - 18) * ((100vw - 800px) / (1280 - 800)));
-    font-weight: 400;
-    color: #2699cc;
+    display: grid;
+    grid-template: max-content / 1fr max-content max-content;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    gap: 25px;
 }
 
-@media screen and (max-width: 500px){
+
+.footer__phone {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #064867;
+    grid-column: 2/3;
+}
+
+.footer__email {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #064867;
+    grid-column: 3/4
+}
+
+.footer__text {
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #064867;
+}
+
+@media screen and (max-width: 1280px) {
 
     .footer {
-        grid-auto-flow: row;
-        grid-template: auto / 1fr;
+        padding: calc(5px + (20 - 5) * ((100vw - 280px) / (1280 - 280)));
     }
 
+    .footer__email {
+        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (1280 - 280)));
+        line-height: calc(14px + (22 - 14) * ((100vw - 280px) / (1280 - 280)));
+    }
+
+    .footer__phone {
+        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (1280 - 280)));
+        line-height: calc(14px + (22 - 14) * ((100vw - 280px) / (1280 - 280)));
+    }
+
+    .footer__text {
+        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (1280 - 280)));
+        line-height: calc(14px + (22 - 14) * ((100vw - 280px) / (1280 - 280)));
+    }
+
+    .footer__contact {
+        gap: calc(10px + (25 - 10) * ((100vw - 280px) / (1280 - 280)));
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .footer__contact {
+        grid-template: max-content / 1fr 1fr;
+    }
+
+    .footer__email {
+        grid-row: 1/2;
+        grid-column: 2/3
+    }
+
+    .footer__phone {
+        grid-row: 2/3;
+        grid-column: 2/3
+    }
 }
