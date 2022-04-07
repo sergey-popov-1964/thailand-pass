@@ -1,15 +1,17 @@
 //Основные конфигурационные установки
 document.querySelector('.config__sendMessageEmail').value = config.sendMessageEmail // email куда будут отправляться сообщения
 document.querySelector('.config__titleMessageEmail').value = config.titleMessageEmail // Тема сообщения
-document.querySelector('.header__phone').innerText = config.menuPhone // Номер телефона, котрый будет отображаться в Хедере
-document.querySelector('.header__phone').href = "tel:" + config.callPhone // Номер телефона, котрый будет вызываться при клике на ссылку с номером телефона в Хедере
-document.querySelector('.header__email').innerText = config.emailCompany // Email, котрый будет отображаться в Хедере
-document.querySelector('.header__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылку Email в Хедере
 
-document.querySelector('.footer__phone').innerText = config.menuPhone // Номер телефона, котрый будет отображаться в Футере
-document.querySelector('.footer__phone').href = "tel:" + config.callPhone // Номер телефона, котрый будет вызываться при клике на ссылку с номером телефона в Футере
-document.querySelector('.footer__email').innerText = config.emailCompany // Email, котрый будет отображаться в Футере
-document.querySelector('.footer__email').href = "mailto:" + config.emailCompany // Email, на который будет отправляться сообщение при клике на ссылку Email в Футере
+// Заполнение контактных данных (телефон и email)
+document.querySelectorAll('.contact__phone').forEach((item) => {
+    item.innerText = config.menuPhone;
+    item.href = "tel:" + config.callPhone;
+})
+
+document.querySelectorAll('.contact__email').forEach((item) => {
+    item.innerText = config.emailCompany;
+    item.href = "mailto:" + config.emailCompany;
+})
 
 //Класс для добавления нового DOM элемента
 class Section {
@@ -147,9 +149,9 @@ const popupInfo = new PopupInfo(elementPopupOverlayInfo, elementPopupFormSelecto
 popupInfo.setEventListeners();
 
 //Создание инстанса для формы Бургер меню
-const elementPopupOverlayBurger = '.popup__overlay-burger';
-const elementPopupMenuSelector = '.popup__burger-menu';
-const popupMenu = new PopupMenu(elementPopupOverlayBurger, elementPopupMenuSelector, 'popup__overlay_active', '_active' );
+const elementPopupOverlayBurger = '.popup__overlay_burger';
+const elementPopupMenuSelector = '.burger';
+const popupMenu = new PopupMenu(elementPopupOverlayBurger, elementPopupMenuSelector, 'popup__overlay_active', 'burger_active' );
 popupMenu.setEventListeners();
 
 //Слушатель на иконке меню бургера
