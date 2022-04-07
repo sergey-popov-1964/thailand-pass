@@ -1,5 +1,16 @@
 
-
+body {
+    --main-color: #064867;
+    --altenative-color: #2699cc;
+    --alternative-button-text-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --alternative-background-color: #f1f1f5;
+    --alernative-border-color: #c0c0d5;
+    --main-text-color: #000000;
+    --alternative-text-color: #FFFFFF;
+    --accent-color: #a629a0;
+    --overlay-color: rgba(0, 0, 0, .5);
+}
 
 .main {
     grid-row: 2/3;
@@ -34,8 +45,8 @@ html {
     margin: 0;
     padding: 10px 20px;
     outline: none;
-    border: 1px solid #2699cc;
-    background-color: #2699cc;
+    border: 1px solid var(--altenative-color);
+    background-color: var(--altenative-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 18px;
@@ -47,17 +58,17 @@ html {
 }
 
 .app__button:hover {
-    background-color: #064867;
+    background-color: var(--main-color);
 }
 
 .app__button_transparent {
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     color: #2699cc;
 }
 
 .app__button_transparent:hover {
-    background-color: #2699cc;
-    color: #FFFFFF;
+    background-color: var(--altenative-color);
+    color: var(--alternative-button-text-color);
 }
 
 .app__section_center {
@@ -126,7 +137,7 @@ html {
 }
 
 .app__text_footer {
-    color: #2699cc;
+    color: var(--altenative-color);
 }
 
 .app__mark {
@@ -165,25 +176,27 @@ html {
 }
 
 .app__section_border {
-    border-top: 1px solid #2699cc;
+    border-top: 1px solid var(--altenative-color);
 }
 
 .app__section_gray {
-    background: #f1f1f5;
+    background: var(--alternative-background-color);
 }
 
 .app__link {
     list-style: none;
     text-decoration: none;
     transition: all 1s ease;
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .app__link:hover {
-    color: #2699cc;
+    color: var(--altenative-color);
 }
 
 .app__link:visited {
-    color: #064867;
+    color: var(--main-color);
 }
 
 

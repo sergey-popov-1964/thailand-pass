@@ -1,13 +1,13 @@
 /* --------------------------------- */
 /* Answer */
 .answer__content {
-    border-bottom: solid 1px #c0c0d5;
+    border-bottom: solid 1px var(--alernative-border-color);
 }
 
 .element-answer__name {
     border: solid 1px #c0c0d5;
     border-bottom: none;
-    background: #f1f1f5;
+    background: var(--alternative-background-color);
     display: grid;
     grid-auto-flow: column;
     grid-template: auto / 20px 1fr;
@@ -33,7 +33,7 @@
     margin: 0;
     padding: 10px;
     text-align: left;
-    color: #000000;
+    color: var(--main-text-color);
     font-size: 18px;
     line-height: 22px ;
     font-weight: 600;
@@ -43,7 +43,7 @@
     margin: 0;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    color: #000000;
+    color: var(--main-text-color);
     font-size: 16px;
     line-height: 20px ;
     font-weight: 400;
@@ -68,17 +68,6 @@
         opacity: 1;
     }
 }
-
-/*@-webkit-keyframes element-answer__text_hide {*/
-/*    0% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*       50% {*/
-/*        opacity: 0;*/
-/*        transform: scale3d(.3, .3, .3);*/
-/*    }*/
-/*}*/
-
 
 @media screen and (max-width: 1280px){
 
