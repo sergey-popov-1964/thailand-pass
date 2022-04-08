@@ -78,6 +78,13 @@ const allSlideNews = itemsSlider.length - 1; //Общее количество �
 const buttonNext = document.querySelector('.news__next') //селектор кнопки Next
 const buttonPrev = document.querySelector('.news__prev') //селектор кнопки Prev
 
+const newsCountCurrent = document.querySelector('.news__count_current')
+const newsCountEnd = document.querySelector('.news__count_end')
+
+newsCountCurrent.innerText = stepSlideNews;
+newsCountEnd.innerText = allSlideNews+1;
+
+
 const removeNews = (firstNews, lastNews) => {
     //Удаление видимости у текущих новостей
     for (let i = firstNews; i <= lastNews; i++) {
@@ -102,21 +109,27 @@ const nextSlide = () => {
         firstSlideNews = firstSlideNews + stepSlideNews;
         lastSlideNews = lastSlideNews + stepSlideNews;
 
+        newsCountCurrent.innerText = lastSlideNews+1;
+
+
         addNews(firstSlideNews, lastSlideNews)
 
         buttonPrev.removeAttribute("disabled");
-        buttonPrev.classList.remove('news__button_transparent')
+        buttonPrev.classList.remove('news__button_disabled')
     } else {
         removeNews(firstSlideNews, lastSlideNews)
 
         firstSlideNews = allSlideNews - (stepSlideNews - 1);
         lastSlideNews = allSlideNews;
 
+        newsCountCurrent.innerText = lastSlideNews+1;
+
+
         addNews(firstSlideNews, lastSlideNews)
 
         buttonNext.setAttribute("disabled", "disabled");
         buttonPrev.removeAttribute("disabled");
-        buttonNext.classList.add('news__button_transparent')
+        buttonNext.classList.add('news__button_disabled')
     }
 }
 
@@ -129,10 +142,13 @@ const prevSlide = () => {
         firstSlideNews = firstSlideNews - stepSlideNews;
         lastSlideNews = lastSlideNews - stepSlideNews;
 
+        newsCountCurrent.innerText = lastSlideNews+1;
+
+
         addNews(firstSlideNews, lastSlideNews)
 
         buttonNext.removeAttribute("disabled");
-        buttonNext.classList.remove('news__button_transparent')
+        buttonNext.classList.remove('news__button_disabled')
     } else {
         removeNews(firstSlideNews, lastSlideNews)
 
@@ -140,11 +156,14 @@ const prevSlide = () => {
         firstSlideNews = 0;
         lastSlideNews = stepSlideNews - 1;
 
+        newsCountCurrent.innerText = lastSlideNews+1;
+
+
         addNews(firstSlideNews, lastSlideNews)
 
         buttonPrev.setAttribute("disabled", "disabled");
         buttonNext.removeAttribute("disabled");
-        buttonPrev.classList.add('news__button_transparent')
+        buttonPrev.classList.add('news__button_disabled')
     }
 }
 
@@ -156,4 +175,4 @@ for (let i = firstSlideNews; i <= lastSlideNews; i++) {
     itemsSlider[i].classList.remove('news__item_hide');
 }
 
-buttonPrev.setAttribute("disabled", "disabled");
+// buttonPrev.setAttribute("disabled", "disabled");ute("disabled", "disabled");
