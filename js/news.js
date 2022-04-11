@@ -18,8 +18,6 @@ if (windowInnerWidth > 800) {
 }
 
 
-
-
 //Новая новость
 class News {
     constructor(newSelector, data) {

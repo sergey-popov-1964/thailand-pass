@@ -1,3 +1,45 @@
+//Новый слайд
+class Slider {
+    constructor(newSelector, data) {
+        this._newSelector = newSelector;
+        this._img = data.img;
+    }
+
+    _getTemplate() {
+        return document
+            .querySelector(this._newSelector)
+            .content
+            .querySelector('.swiper-slide')
+            .cloneNode(true);
+    }
+
+    _setEventListeners() {
+    }
+
+    generateCard() {
+        this._element = this._getTemplate();
+        this._element.querySelector('.slider__img').src = this._img;
+        // this._setEventListeners();
+        return this._element;
+    }
+}
+
+//Секция Slider
+const elementListSliderSelector = '.slider__container'; //Куда вставляется в index.html
+
+const sliderSection = new Section(elementListSliderSelector); //экземпляр класса для секции Slider
+
+const elementSliderSelector = '.element-slider';
+
+sliderDate.forEach((item) => {
+    sliderSection.addItem(createCard(item))
+});
+
+function createCard(newSlide) {
+    const card = new Slider(elementSliderSelector, newSlide);
+    return card.generateCard();
+}
+
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     // effect: 'slide',
@@ -27,3 +69,5 @@ const swiper = new Swiper('.swiper', {
         },
     }
 });
+
+

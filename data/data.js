@@ -313,3 +313,31 @@ const newsDate = [
     },
 
 ]
+
+const sliderDate = [
+    {
+        img: "image/slider/image1.jpg",
+    },
+    {
+        img: "image/slider/image2.jpg",
+    },
+    {
+        img: "image/slider/image3.jpg",
+    },
+    {
+        img: "image/slider/image4.jpg",
+   },
+    {
+        img: "image/slider/image5.jpg",
+    },
+    {
+        img: "image/slider/image6.jpg",
+    },
+    {
+        img: "image/slider/image7.jpg",
+    },
+    {
+        img: "image/slider/image8.jpg",
+    },
+
+]
