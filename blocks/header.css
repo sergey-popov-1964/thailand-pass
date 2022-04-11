@@ -199,17 +199,6 @@
         display: none;
     }
 
-    /*.burger__img {*/
-    /*    display: block;*/
-    /*    margin: 0;*/
-    /*    width: 30px;*/
-    /*    padding: 0 10px 0 0;*/
-    /*    grid-column: 3/4;*/
-    /*    grid-row: 1/2;*/
-    /*    align-self: center;*/
-    /*    cursor: pointer;*/
-    /*}*/
-
     .header__order {
         display: none;
     }

@@ -1,5 +1,6 @@
 @import url('vendor/fonts.css');
 @import url('vendor/normalize.css');
+@import url('vendor/swiper-bundle.min.css');
 
 @import url('blocks/general.css');
 @import url('blocks/offer.css');
@@ -12,6 +13,7 @@
 @import url('blocks/going.css');
 @import url('blocks/header.css');
 @import url('blocks/burger.css');
+@import url('blocks/slider.css');
 
 
 /*html {*/

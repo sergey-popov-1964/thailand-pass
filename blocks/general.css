@@ -26,9 +26,10 @@ html {
     height: 100%;
     margin: 0 auto;
     font-family: 'Montserrat', 'Arial', sans-serif;
-    padding: 28px 0 24px;
-    display: grid;
-    grid-template:repeat(3, auto) /1fr minmax(auto, 1240px) 1fr;
+    padding: 25px;
+    max-width: 1240px;
+    /*display: grid;*/
+    /*grid-template:repeat(3, auto) /1fr minmax(auto, 1240px) 1fr;*/
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -170,7 +171,7 @@ html {
 }
 
 .app__section {
-    grid-column: 2/3;
+    /*grid-column: 2/3;*/
     margin: 0;
     padding: 40px 0;
 }
